@@ -18,5 +18,13 @@
             "discount": 30,
             "image": "https://o.remove.bg/downloads/03bc0271-dcc5-4aeb-93b7-664b4278076f/fone-de-ouvido-edifier-removebg-preview.png"
         }
+    ],
+    "specialOffer": [
+        {
+            "id": 1,
+            "title": "Air Jordan edição de colecionador",
+            "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non consequuntur odit quibusdam odio iste! Obcaecati delectus qui doloribus labore dignissimos nisi eius quae, sed cum ad unde, modi culpa reprehenderit!",
+            "image": "https://equipe1fs13.github.io/img/tenisOffer.png"
+        }
     ]
 }
