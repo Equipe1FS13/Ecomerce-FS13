@@ -29,7 +29,7 @@ export default function FeaturedCollections() {
                     </div>
 
                     <div>
-                        <img src={props.image} />
+                        <img src={props.image} alt="" />
                     </div>
                 </div>
             </Grid>

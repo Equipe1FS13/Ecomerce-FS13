@@ -2,6 +2,7 @@ import Footer from "../../components/Footer";
 import Menu from "../../components/Menu";
 import Navbar from "../../components/Navbar";
 import FeaturedCollections from "../../components/FeaturedCollections";
+import FeaturedSpecialOffer from "../../components/FeaturedSpecialOffer"
 
 export default function Home() {
     return (
@@ -24,9 +25,7 @@ export default function Home() {
                 Produtos
             </div>
 
-            <div>
-                Oferta Especial
-            </div>
+           <FeaturedSpecialOffer/>
 
             <Footer/>
         </div>
