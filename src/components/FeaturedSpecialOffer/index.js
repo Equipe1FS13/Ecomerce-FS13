@@ -1,7 +1,7 @@
 export default function FeatureSpecialOffer() {
     return(
         <div>
-            pagina oferta especial
+            pagina oferta especial.
         </div>
     )
 }
