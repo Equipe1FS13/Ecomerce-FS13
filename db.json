@@ -4,19 +4,19 @@
             "id": 1,
             "title": "Novo Drop Supreme",
             "discount": 30,
-            "image": "https://o.remove.bg/downloads/4aec2f3d-040e-4ce4-b79d-4a2c9cdb6fa5/blusa-moletom-canguru-star-wars-stormtrooper-com-capuz-moletom-promocao-removebg-preview.png"
+            "image": "https://equipe1fs13.github.io/img/camisa.png"
         },
         {
             "id": 2,
-            "title": "Coleção Adidas",
+            "title": "Coleção Nike",
             "discount": 30,
-            "image": "https://o.remove.bg/downloads/44c1a2e9-088b-4263-929d-170b09675086/tenis_adidas_speedend2end_basquete_77_1_20210702103436-removebg-preview.png"
+            "image": "https://equipe1fs13.github.io/img/tenisDestaque.png"
         },
         {
             "id": 3,
             "title": "Novo Beats Bass",
             "discount": 30,
-            "image": "https://o.remove.bg/downloads/03bc0271-dcc5-4aeb-93b7-664b4278076f/fone-de-ouvido-edifier-removebg-preview.png"
+            "image": "https://equipe1fs13.github.io/img/Headsets.png"
         }
     ],
     "specialOffer": [
