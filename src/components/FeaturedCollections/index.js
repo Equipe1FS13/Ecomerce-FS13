@@ -1,12 +1,12 @@
 import React from "react";
-import { Grid, Button } from "@mui/material";
+import { Grid } from "@mui/material";
 import "./styles.scss";
-import tenis from "./img/tenis.png";
+
 
 export default function FeaturedCollections() {
-    const [items, setItems] = React.useState([]); 
+    const [items, setItems] = React.useState([]);
 
-    React.useEffect(() => {    
+    React.useEffect(() => {
         fetch('http://localhost:8000/collections')
             .then(res => res.json())
             .then(data => setItems(data));
@@ -16,18 +16,20 @@ export default function FeaturedCollections() {
         return (
             <Grid item xs={4}>
                 <div className="card">
-                    <div>
-                        {props.discount}
-                        {props.discount && "%"} 
-                        
-                        <br/>
-                        {props.text} <br/>
+                    <div className="propsText">
 
-                        <Button variant="contained">Comprar</Button>
+                        <span className="rotulo">
+                            {props.discount}
+                            {props.discount && "% OFF"}
+                        </span>
+                        <br />
+                        <span className="spanText">{props.text}</span> <br />
+
+                        <button className="Buttonprops">Comprar</button>
                     </div>
 
                     <div>
-                        <img src={props.image}/>
+                        <img src={props.image} />
                     </div>
                 </div>
             </Grid>
@@ -36,11 +38,12 @@ export default function FeaturedCollections() {
 
     return (
         <div className="featured-collections">
-            Coleções em Destaque
+            
+            <span className="collectionTitle"> Coleções em Destaque </span>
 
             <Grid container spacing={2}>
                 {items.map(cada => (
-                    <Card text={cada.title} discount={cada.discount} image={cada.image}/>
+                    <Card text={cada.title} discount={cada.discount} image={cada.image} />
                 ))}
             </Grid>
         </div>

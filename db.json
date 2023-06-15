@@ -2,21 +2,21 @@
     "collections": [
         {
             "id": 1,
-            "title": "Camisetas",
+            "title": "Novo Drop Supreme",
             "discount": 30,
-            "image": "https://w7.pngwing.com/pngs/246/734/png-transparent-nike-free-nike-air-max-air-jordan-sneakers-nike-white-outdoor-shoe-sneakers.png"
+            "image": "https://o.remove.bg/downloads/4aec2f3d-040e-4ce4-b79d-4a2c9cdb6fa5/blusa-moletom-canguru-star-wars-stormtrooper-com-capuz-moletom-promocao-removebg-preview.png"
         },
         {
             "id": 2,
-            "title": "Tenis",
-            "discount": 40,
-            "image": "https://www.imagensempng.com.br/wp-content/uploads/2021/05/Headset-Gamer-Png.png"
+            "title": "Coleção Adidas",
+            "discount": 30,
+            "image": "https://o.remove.bg/downloads/44c1a2e9-088b-4263-929d-170b09675086/tenis_adidas_speedend2end_basquete_77_1_20210702103436-removebg-preview.png"
         },
         {
             "id": 3,
-            "title": "Headsets",
-            "discount": 10,
-            "image": "https://static.vecteezy.com/system/resources/previews/012/628/220/non_2x/plain-black-t-shirt-on-transparent-background-free-png.png"
+            "title": "Novo Beats Bass",
+            "discount": 30,
+            "image": "https://o.remove.bg/downloads/03bc0271-dcc5-4aeb-93b7-664b4278076f/fone-de-ouvido-edifier-removebg-preview.png"
         }
     ]
 }
