@@ -37,6 +37,7 @@ export default function FeaturedSpecialOffer(){
     }
 
     return(
+      feature/specialOffer
         <div className="featured-specialoffer">
 
             <Grid container spacing={2}>
@@ -44,6 +45,5 @@ export default function FeaturedSpecialOffer(){
                     <Card image={cada.image} title={cada.title} text={cada.text}  />
                 ))}
             </Grid>
-        </div>
     )
  }
