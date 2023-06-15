@@ -26,10 +26,13 @@ div.featured-collections {
         display: flex;
         justify-content: space-between;
 
-       
+        
     }
 }
 
+.imagecards{
+    display: flex;
+}
 // Texto e botões alinhamento
 
 div.propsText {
@@ -42,7 +45,7 @@ div.propsText {
 
 
     .spanText {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: bold;
         font-family: Inter, sans-serif;
 

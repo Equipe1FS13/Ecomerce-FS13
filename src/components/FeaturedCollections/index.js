@@ -28,7 +28,7 @@ export default function FeaturedCollections() {
                         <button className="Buttonprops">Comprar</button>
                     </div>
 
-                    <div>
+                    <div className="imagecards">
                         <img src={props.image} alt="" />
                     </div>
                 </div>

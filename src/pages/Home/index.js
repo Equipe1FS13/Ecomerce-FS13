@@ -3,6 +3,7 @@ import Menu from "../../components/Menu";
 import Navbar from "../../components/Navbar";
 import FeaturedCollections from "../../components/FeaturedCollections";
 import FeaturedSpecialOffer from "../../components/FeaturedSpecialOffer"
+import FeatureCarrocel from "../../components/FeatureCarrocel";
 
 export default function Home() {
     return (
@@ -12,7 +13,7 @@ export default function Home() {
             <Menu/>
 
             <div>
-                Carrossel
+                <FeatureCarrocel/>
             </div>
 
             <FeaturedCollections/>
