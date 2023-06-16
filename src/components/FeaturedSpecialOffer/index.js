@@ -37,7 +37,6 @@ export default function FeaturedSpecialOffer() {
     }
 
     return (
-        // feature / specialOffer
         <div className="featured-specialoffer" >
 
             <Grid container spacing={2}>
