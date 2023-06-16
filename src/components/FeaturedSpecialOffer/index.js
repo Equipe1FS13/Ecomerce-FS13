@@ -15,7 +15,7 @@ export default function FeaturedSpecialOffer() {
     const Card = (props) => {
         return (
             <>
-                <Grid item xs={5}>
+                <Grid item xs={6}>
                     <div className="card">
                         <img src={props.image} alt="" />
                     </div>
@@ -37,7 +37,6 @@ export default function FeaturedSpecialOffer() {
     }
 
     return (
-        // feature / specialOffer
         <div className="featured-specialoffer" >
 
             <Grid container spacing={2}>
