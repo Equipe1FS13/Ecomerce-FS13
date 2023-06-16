@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+
+$color-bg-grey: #1F1F1F;
+$color-bg-text: #ffff;
+
+.featureFooter {
+    margin-top: 6rem;
+    background-color: #1F1F1F;
+    display: flex;
+    justify-content:space-between;
+
+    .cards{
+      margin: 6rem;
+
+        .card {
+            height: 20rem;
+            background-color: $color-bg-grey;
+            border-bottom: 1px solid #626262;
+            
+            
+            .spanLogo{
+                color: $color-bg-text;
+                font-family: Inter, sans-serif;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+                
+                .spanTitle{
+                    color: $color-bg-text;
+                    font-family: Inter, sans-serif;
+                    font-size: 1rem;
+                }
+
+                .divLink{
+                    padding-top: 1.2rem;
+                }
+                
+                .divLogo{
+                    padding-top:  1.5rem;
+                    color: $color-bg-text;
+                    font-size: .9rem;
+                    font-weight: 400;
+                    font-family: Inter, sans-serif;
+                    margin-right: 10rem;
+                    margin-right: 10rem;
+                    word-spacing: 2px;
+                    line-height: 1.5rem;
+                }
+
+                .divText{
+                    padding-top: 1.5rem;
+                    color: $color-bg-text;
+                    font-size: .9rem;
+                    font-weight: 400;
+                    font-family: Inter, sans-serif;
+                    word-spacing: 2px;
+                    line-height: 1.5rem;
+                }
+
+                .divNumber {
+                    padding-top: 1rem;
+                    color: $color-bg-text;
+                    font-size: .9rem;
+                    font-weight: 400;
+                    font-family: Inter, sans-serif;
+                    margin-right: 1rem;
+                    word-spacing: 2px;
+                }
+
+                    
+                .link{
+                    display: block;
+                    padding-top: 1.3rem;
+                    color: $color-bg-text;
+                    font-family: Inter, sans-serif;
+                    font-size: .9rem;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+
+                .link:hover{
+                    cursor: pointer;
+                }
+        }
+    }
+}
