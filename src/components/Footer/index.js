@@ -1,6 +1,11 @@
 import React from 'react';
-import {Grid} from '@mui/material'; 
+import {Grid} from '@mui/material';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import './styles.scss'
+
+import logo from './img/logoDigitalCollege.png';
 
 export default function Footer() {
 
@@ -8,18 +13,20 @@ export default function Footer() {
         <div className="featureFooter">
             <Grid container className="cards">
                 <Grid item xs={5}>
-                    <div className="card">
-                        <img src={""} alt=""/>
-                        <span className="spanLogo">Digital Store</span> <br/>
+                    <div className="card">  
                         <div className="divLogo">
+                            <img className="logo" src={logo} alt="/"/>
+                            <span className="titleLogo">Digital Store</span> <br/>
+                        </div>
+                        <div className="textLogo">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore.
                             </div>
 
                         <div className="iconsFooter">
-                            <a href="/">icon</a>
-                            <a href="/">icon</a>
-                            <a href="/">icon</a>
+                            <a href=""><FacebookIcon/></a>
+                            <a href="/"><InstagramIcon/></a>
+                            <a href="/"><TwitterIcon/></a>
                         </div>
                     </div>
                 </Grid>
