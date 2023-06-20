@@ -6,6 +6,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import './styles.scss'
 
 import logo from './img/logoDigitalCollege.png';
+import facebook from './img/facebook.png'
 
 export default function Footer() {
 
@@ -24,7 +25,7 @@ export default function Footer() {
                             </div>
 
                         <div className="iconsFooter">
-                            <a href=""><FacebookIcon/></a>
+                            <a href=""><img src={facebook} alt="/" /></a>
                             <a href="/"><InstagramIcon/></a>
                             <a href="/"><TwitterIcon/></a>
                         </div>
@@ -71,6 +72,7 @@ export default function Footer() {
                     </div>
                 </Grid>
             </Grid>
+            <div className="dc" >@ 2022 Digital College</div>
         </div>
     )
 }
