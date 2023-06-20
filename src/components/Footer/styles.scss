@@ -8,9 +8,11 @@ $color-bg-text: #ffff;
     background-color: #1F1F1F;
     display: flex;
     justify-content:space-between;
+    align-items: center;
+  justify-content: center;
 
     .cards{
-      margin: 6rem;
+      margin: 4rem;
 
         .card {
             height: 20rem;
@@ -21,6 +23,7 @@ $color-bg-text: #ffff;
                 display: flex;
                 align-items: center;
                 margin-bottom: 10px;
+                margin-left: 2rem;
 
                 .logo{
                     width: 50px;
@@ -37,10 +40,22 @@ $color-bg-text: #ffff;
                 }
             }
 
-        
+            .textLogo{
+                padding-top:  1.5rem;
+                color: $color-bg-text;
+                font-size: 1rem;
+                font-weight: 400;
+                font-family: Inter, sans-serif;
+                margin-right: 10rem;
+                margin-right: 10rem;
+                word-spacing: 1px;
+                line-height: 1.5rem;
+                margin-left: 2rem;
+            }
             
             .iconsFooter{
                 margin-top: 2rem;
+                margin-left: 2rem;
 
                 a {
                     color: #fff;
@@ -51,25 +66,16 @@ $color-bg-text: #ffff;
                 .spanTitle{
                     color: $color-bg-text;
                     font-family: Inter, sans-serif;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     font-weight: 600;
+                    margin-left: 2rem;
                 }
 
                 .divLink{
                     padding-top: 1rem;
+                    margin-left: 2rem;
                 }
                 
-                .textLogo{
-                    padding-top:  1.5rem;
-                    color: $color-bg-text;
-                    font-size: 1rem;
-                    font-weight: 400;
-                    font-family: Inter, sans-serif;
-                    margin-right: 10rem;
-                    margin-right: 10rem;
-                    word-spacing: 2px;
-                    line-height: 1.5rem;
-                }
 
                 .divText{
                     padding-top: 1.9rem;
@@ -78,16 +84,18 @@ $color-bg-text: #ffff;
                     font-weight: 400;
                     font-family: Inter, sans-serif;
                     line-height: 1.5rem;
+                    margin-left: 2.5rem;
                 }
 
                 .divNumber {
-                    padding-top: 1rem;
+                    padding-top: 1.5rem;
                     color: $color-bg-text;
                     font-size: 1rem;
                     font-weight: 400;
                     font-family: Inter, sans-serif;
                     margin-right: 1rem;
                     word-spacing: 2px;
+                    margin-left: 2.5rem;
                 }
 
                     
@@ -105,5 +113,17 @@ $color-bg-text: #ffff;
                     cursor: pointer;
                 }
         }
+    }
+
+    .dc{
+        position: absolute;
+        width: 10rem;
+        height: 1.5rem;
+        left: 38rem;
+        margin-top: 25rem;
+        color: $color-bg-text;
+        font-size: .8rem;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
     }
 }
