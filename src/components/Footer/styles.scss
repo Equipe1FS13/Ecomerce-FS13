@@ -2,6 +2,7 @@
 
 $color-bg-grey: #1F1F1F;
 $color-bg-text: #ffff;
+$color-pink: #C92071;
 
 .featureFooter {
     margin-top: 6rem;
@@ -61,7 +62,14 @@ $color-bg-text: #ffff;
                     color: #fff;
                     margin-right: 2rem;
                 }
+
+                a:hover{
+                    cursor: pointer;
+                    color: $color-pink;
+                }
             }
+
+            
             
                 .spanTitle{
                     color: $color-bg-text;
@@ -98,6 +106,11 @@ $color-bg-text: #ffff;
                     margin-left: 2.5rem;
                 }
 
+                .divNumber:hover{
+                    cursor: pointer;
+                    color: $color-pink;
+                }
+
                     
                 .link{
                     display: block;
@@ -111,6 +124,7 @@ $color-bg-text: #ffff;
 
                 .link:hover{
                     cursor: pointer;
+                    color: $color-pink;
                 }
         }
     }
