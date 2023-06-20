@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
 
-$color-bg-blue: #D8E3F2;
-$color-pink: #C92071;
-$color-text: #474747;
-$color-rotulo: #E7FF86;
+@use '../index.scss' as vars;
+
+@use '../fonts.scss';
 
 
 div.featured-collections {
@@ -20,7 +18,7 @@ div.featured-collections {
 
     .card {
         margin-top: 20px;
-        background-color: $color-bg-blue;
+        background-color: vars.$color-bg-blue;
         border-radius: 8px;
         min-height: 250px;
         display: flex;
@@ -57,7 +55,7 @@ div.propsText {
 // estilo do botão, foi retirado o component do mui material para fazer dessa forma
 
 .Buttonprops {
-    color: $color-pink;
+    color: vars.$color-pink;
     width: 150px;
     height: 50px;
     border-radius: 10px;
@@ -69,7 +67,7 @@ div.propsText {
 
 .Buttonprops:hover {
     cursor: pointer;
-    background-color: $color-pink;
+    background-color: vars.$color-pink;
     color: #D8E3F2;
 }
 
@@ -77,7 +75,7 @@ div.propsText {
 
 .rotulo {
     font-size: 14px;
-    background-color: $color-rotulo ;
+    background-color: vars.$color-rotulo ;
     border-radius: 30px;
     width: 80px;
     text-align: center;

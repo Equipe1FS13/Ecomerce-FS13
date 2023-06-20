@@ -1,30 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+@use '../index.scss' as vars;
 
-$color-bg-blue: #D8E3F2;
-$color-pink: #C92071;
-$color-text: #474747;
-$color-rotulo: #E7FF86;
-$color-special: #F6AA1C;
-$font-inter: Inter, sans-serif;
-
+@use '../fonts.scss';
 
 
 .Buttonpropscarro {
     color: #D8E3F2;
-    background-color: $color-pink;
+    background-color: vars.$color-pink;
     width: 200px;
     height: 50px;
     border-radius: 10px;
     border: none;
     font-weight: bold;
     transition: 0.5s;
-    font-family: $font-inter;
+    font-family: fonts.$font-inter;
 }
 
 .Buttonpropscarro:hover {
     cursor: pointer;
     background-color: #D8E3F2;
-    color: $color-pink;
+    color: vars.$color-pink;
 }
 
 
@@ -49,13 +43,13 @@ $font-inter: Inter, sans-serif;
         font-weight: 800;
         font-size: 64px;
         line-height: 66px;
-        font-family: $font-inter;
+        font-family: fonts.$font-inter;
         letter-spacing: 1px;
     }
 
 
     p {
-        font-family: $font-inter;
+        font-family: fonts.$font-inter;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -64,11 +58,11 @@ $font-inter: Inter, sans-serif;
     }
 
     span {
-        color: $color-special;
+        color: vars.$color-special;
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
-        font-family: $font-inter;
+        font-family: fonts.$font-inter;
         letter-spacing: 0.75px;
     }
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import {Grid} from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import './styles.scss'
@@ -25,7 +24,7 @@ export default function Footer() {
                             </div>
 
                         <div className="iconsFooter">
-                            <a href=""><img src={facebook} alt="/" /></a>
+                            <a href="/"><img src={facebook} alt="/" /></a>
                             <a href="/"><InstagramIcon/></a>
                             <a href="/"><TwitterIcon/></a>
                         </div>

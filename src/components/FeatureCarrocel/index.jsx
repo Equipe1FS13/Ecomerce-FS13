@@ -32,7 +32,7 @@ export default function FeatureCarrocel() {
                     <button className="Buttonpropscarro">Ver Ofertas</button>
                 </div>
                 <div className='imagedivbox'>
-                    <img src={image} />
+                    <img src={image} alt=""/>
                 </div>
             </div>
             <MobileStepper className='dotscomponets'
