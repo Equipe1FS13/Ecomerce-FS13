@@ -3,12 +3,13 @@
 @use '../fonts.scss';
 
 .featuredProducts{
-    background-color:aquamarine ;
-    margin: 4rem;
-
+    background-color: vars.$color-background-products;
+    padding: 4rem;
+   
     .divTitle{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 1rem;
 
         .productsTitle{
             width: 220px;
@@ -45,4 +46,59 @@
           }  
     }
     
+
+    .card{
+        width: 292px;
+        height: 321px;
+        margin-right: 4rem;
+        background: vars.$color-text-footer;
+        box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);
+        border-radius: 4px;
+        
+
+        .discounted{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 96px;
+            height: 32px;
+            background: vars.$color-rotulo;
+            color: vars.$color-text;
+            border-radius: 29px;
+            font-family: fonts.$font-inter;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 32px;
+            letter-spacing: 0.75px;
+            
+        }
+    }
+
+    .cardText{
+        margin-top: 1.5rem;
+        font-style: normal;
+        font-family: fonts.$font-inter;
+        line-height: 2rem;
+
+        .title{
+            color: vars.$color-text-products;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 0.75px;
+        }
+
+        .text{
+            color: vars.$color-text;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: 0.75px;
+        }
+
+        .value{
+            color: vars.$color-text-products;
+        }
+    }
+
 }

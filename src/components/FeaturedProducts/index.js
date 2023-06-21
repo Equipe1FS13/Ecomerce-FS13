@@ -17,23 +17,25 @@ export default function FeaturedProducts() {
             <>
             <Grid item xs={3}>
               <div className="card">
-                    <div className="text">
-                        <span className="rotulo">
-                            {props.discount}
-                            {props.discout && "% OFF"}
-                        </span>
-                        <br/>
-                        <div className="img">
-                            <img src={props.image} alt="" />
-                        </div>
+                    
+                    <span className={`discount ${props.discount ? 'discounted' : ''}`}>
+                        {props.discount}
+                        {props.discount && "% OFF"}
+                    </span>
+                    <br/>
+                    <div className="img">
+                        <img src={props.image} alt="" />
                     </div>
               </div>
 
-              <span className="title">{props.title}</span>
-              <br/>
-              <span className="text">{props.text}</span>
-              <br/>
-              <span className="value">{props.value}</span>
+              <div className="cardText">
+                    <span className="title">{props.title}</span>
+                    <br/>
+                    <span className="text">{props.text}</span>
+                    <br/>
+                    <span className="value">{props.value}</span>
+              </div>
+              
             </Grid>
             </>
         )
@@ -51,7 +53,7 @@ export default function FeaturedProducts() {
                 </div>
             </div>
 
-            <Grid container spacing={2}>
+            <Grid container spacing={4} className="container">
                 {items.map(cada => {
                     return <Cards discount={cada.discount} image={cada.image} title={cada.title} text={cada.text} value={cada.value}/>
                 })}
