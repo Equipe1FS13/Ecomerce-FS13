@@ -22,7 +22,7 @@ export default function FeaturedCollections() {
                             {props.discount}
                             {props.discount && "% OFF"}
                         </span>
-                        <br />
+                        <br/>
                         <span className="spanText">{props.text}</span> <br />
 
                         <button className="Buttonprops">Comprar</button>

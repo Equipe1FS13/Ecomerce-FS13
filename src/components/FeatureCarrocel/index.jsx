@@ -77,7 +77,7 @@ export default function FeatureCarrocel() {
                                     <button>Ver Ofertas</button>
                                 </section>
                                 <section>
-                                    <img src={step.imgPath} alt='/'/>
+                                    <img src={step.imgPath} alt=""/>
                                 </section>
                             </div>
                         ) : null}
