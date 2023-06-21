@@ -1,0 +1,48 @@
+@use '../index.scss' as vars;
+
+@use '../fonts.scss';
+
+.featuredProducts{
+    background-color:aquamarine ;
+    margin: 4rem;
+
+    .divTitle{
+        display: flex;
+        justify-content: space-between;
+
+        .productsTitle{
+            width: 220px;
+            height: 38px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: 0.75px;
+            color: vars.$color-text;
+        }
+    
+        .link {
+            width: 130px;
+            height: 34px;
+            color: vars.$color-pink;
+            display: flex;
+            align-items: center;
+
+            a {
+                display: flex;
+                text-decoration: none;
+                color: vars.$color-pink;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 34px;
+                letter-spacing: 0.75px;
+                margin-right: .9rem;
+    
+              }
+          }  
+    }
+    
+}

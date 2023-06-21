@@ -43,8 +43,7 @@ export default function FeaturedCollections() {
 
             <Grid container spacing={2}>
                 {items.map(cada => (
-                    <Card text={cada.title} discount={cada.discount} image={cada.image}  />                  
-                    
+                    <Card text={cada.title} discount={cada.discount} image={cada.image}  />                   
                 ))}
             </Grid>
         </div>
