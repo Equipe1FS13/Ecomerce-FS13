@@ -4,10 +4,11 @@ import Navbar from "../../components/Navbar";
 import FeaturedCollections from "../../components/FeaturedCollections";
 import FeaturedSpecialOffer from "../../components/FeaturedSpecialOffer"
 import FeatureCarrocel from "../../components/FeatureCarrocel";
+import FeatureMainCollections from "../../components/FeatureMainCollections";
 
 export default function Home() {
     return (
-        <div>
+        <div style={{backgroundColor:'#f9f8fe'}}>
             <Navbar />
 
             <Menu />
@@ -15,13 +16,11 @@ export default function Home() {
 
             <FeatureCarrocel />
 
-
+            
             <FeaturedCollections />
 
-            <div>
-                Coleções em Destaque 2
-            </div>
-
+            <FeatureMainCollections/>
+            
             <div>
                 Produtos
             </div>
