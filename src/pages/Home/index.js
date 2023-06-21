@@ -8,15 +8,15 @@ import FeatureCarrocel from "../../components/FeatureCarrocel";
 export default function Home() {
     return (
         <div>
-            <Navbar/>
+            <Navbar />
 
-            <Menu/>
+            <Menu />
 
-            <div>
-                <FeatureCarrocel/>
-            </div>
 
-            <FeaturedCollections/>
+            <FeatureCarrocel />
+
+
+            <FeaturedCollections />
 
             <div>
                 Coleções em Destaque 2
@@ -26,9 +26,9 @@ export default function Home() {
                 Produtos
             </div>
 
-           <FeaturedSpecialOffer/>
+            <FeaturedSpecialOffer />
 
-            <Footer/>
+            <Footer />
         </div>
     )
 }

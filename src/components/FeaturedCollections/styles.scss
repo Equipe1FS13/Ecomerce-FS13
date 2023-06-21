@@ -20,8 +20,8 @@ div.featured-collections {
         margin-top: 20px;
         background-color: vars.$color-bg-blue;
         border-radius: 8px;
-        min-height: 250px;
-        display: flex;
+        min-height: 280px;
+        display: flex;        
         justify-content: space-between;
 
         
@@ -43,7 +43,7 @@ div.propsText {
 
 
     .spanText {
-        font-size: 25px;
+        font-size: 45px;
         font-weight: bold;
         font-family: Inter, sans-serif;
 
