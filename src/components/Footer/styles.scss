@@ -5,7 +5,7 @@
 
 
 .featureFooter {
-    margin-top: 6rem;
+   
     background-color: vars.$color-card-footer;
     display: flex;
     justify-content:space-between;
@@ -13,7 +13,7 @@
     justify-content: center;
 
     .cards{
-      margin: 4rem;
+      margin:4rem;
 
         .card {
             height: 20rem;
@@ -62,15 +62,8 @@
                     color: vars.$color-text-footer;
                     margin-right: 2rem;
                 }
-
-                a:hover{
-                    cursor: pointer;
-                    color: vars.$color-pink;
-                }
             }
 
-            
-            
                 .spanTitle{
                     color: vars.$color-text-footer;
                     font-family: fonts.$font-inter;
@@ -105,13 +98,7 @@
                     word-spacing: 2px;
                     margin-left: 2.5rem;
                 }
-
-                .divNumber:hover{
-                    cursor: pointer;
-                    color: vars.$color-pink;
-                }
-
-                    
+     
                 .link{
                     display: block;
                     padding-top: 1.3rem;
@@ -121,15 +108,10 @@
                     font-weight: 400;
                     text-decoration: none;
                 }
-
-                .link:hover{
-                    cursor: pointer;
-                    color: vars.$color-pink;
-                }
         }
     }
 
-    .dc{
+    .divFooter{
         position: absolute;
         width: 10rem;
         height: 1.5rem;
