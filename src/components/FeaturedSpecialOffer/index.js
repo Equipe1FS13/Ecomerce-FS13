@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import './styles.scss'
-/* import '../FeaturedCollections/styles.scss' */
+
 
 export default function FeaturedSpecialOffer() {
     const [items, setItems] = React.useState([])
@@ -15,9 +15,9 @@ export default function FeaturedSpecialOffer() {
     const Card = (props) => {
         return (
             <>
-                <Grid item xs={5.5}>
-                    <div className="card">
-                        <img src={props.image} alt="" />
+                <Grid item xs={6}>
+                    <div className="cardImg">
+                        <img className="img" src={props.image} alt="" />
                     </div>
                 </Grid>
 
@@ -39,7 +39,7 @@ export default function FeaturedSpecialOffer() {
     return (
         <div className="featured-specialoffer" >
 
-            <Grid container spacing={2}>
+            <Grid container spacing={2} className="grid-container">
                 {items.map(cada => (
                     <Card image={cada.image} title={cada.title} text={cada.text} />
                 ))}

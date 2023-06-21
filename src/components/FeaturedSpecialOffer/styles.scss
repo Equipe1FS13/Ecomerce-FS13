@@ -1,21 +1,39 @@
-
 @use '../index.scss' as vars;
 
 @use '../fonts.scss';
 
 
 div.featured-specialoffer {
-    margin: 50px;
+    margin: 0 6rem 1rem 6rem;
 
-    img {
-        width: 500px;
+    .cardImg {
+        background: linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0) 100%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 466px;
+        height: 466px;
+        margin-left: 1.5rem;
+
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 3rem 5rem 0;
+            
+        }
+    }
+
+    .card{
+        margin-top: 2rem;
     }
 
     .Title {
         font-size: small;
         font-weight: bold;
         font-family: Inter, sans-serif;
-        color: vars.$color-pink;;
+        color: vars.$color-pink;
     }
 
     .propsTitle {
@@ -35,9 +53,12 @@ div.featured-specialoffer {
     }
 
     .buttonOffer{
-        width: 13rem;
+        width: 12rem;
         height: 2.4rem;
         margin-top: .5rem;
+        font-weight: 600;
+        font-size: .9rem;
+        font-family: fonts.$font-inter;
         background-color: vars.$color-pink;;
         color: vars.$color-text-footer;
         border: none;
@@ -46,6 +67,6 @@ div.featured-specialoffer {
 
     .buttonOffer:hover {
         cursor: pointer;
-        background-color: #e92785;
+        background-color: #9e0a52;
     }
 }
