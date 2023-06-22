@@ -4,7 +4,7 @@
 
 .featuredProducts{
     background-color: vars.$color-background-products;
-    padding: 4rem;
+    padding: 3rem;
    
     .divTitle{
         display: flex;
@@ -50,13 +50,12 @@
     .card{
         width: 292px;
         height: 321px;
-        margin-right: 4rem;
         background: vars.$color-text-footer;
         box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);
         border-radius: 4px;
         
-
         .discounted{
+            position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -71,7 +70,7 @@
             font-size: 14px;
             line-height: 32px;
             letter-spacing: 0.75px;
-            
+            margin:1.2rem 0 0 1.2rem;
         }
     }
 
@@ -98,6 +97,23 @@
 
         .value{
             color: vars.$color-text-products;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: 0.75px;
+            text-decoration-line: line-through;
+            text-decoration-thickness: 1px;
+            margin-right: .5rem;
+        }
+
+        .newValue{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: 0.75px;
+            color: vars.$color-card-footer;
         }
     }
 
