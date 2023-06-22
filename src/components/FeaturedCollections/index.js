@@ -39,7 +39,7 @@ export default function FeaturedCollections() {
     return (
         <div className="featured-collections">
             
-            <span className="collectionTitle"> Coleções em Destaque </span>
+            <span className="collectionTitle"> Coleções em destaque </span>
 
             <Grid container spacing={2}>
                 {items.map(cada => (
