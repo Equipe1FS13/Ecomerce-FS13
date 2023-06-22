@@ -26,7 +26,8 @@
             "discount": 30,
             "title": "Tênis",
             "text": "K-Swiss V8 - Masculino",
-            "value": "$200 $100",
+            "value": "$200",
+            "newValue": "$100",
             "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
         },
         {
@@ -34,7 +35,8 @@
             "discount": 30,
             "title": "Tênis",
             "text": "K-Swiss V8 - Masculino",
-            "value": "$200 $100",
+            "value": "$200",
+            "newValue": "$100",
             "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
         },
         {
@@ -42,7 +44,8 @@
             "discount": "",
             "title": "Tênis",
             "text": "K-Swiss V8 - Masculino",
-            "value": "$200 $100",
+            "value": "$200",
+            "newValue": "$100",
             "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
         },
         {
@@ -50,7 +53,8 @@
             "discount": "",
             "title": "Tênis",
             "text": "K-Swiss V8 - Masculino",
-            "value": "$200 $100",
+            "value": "$200",
+            "newValue": "$100",
             "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
         },
         {
@@ -58,7 +62,8 @@
             "discount": "",
             "title": "Tênis",
             "text": "K-Swiss V8 - Masculino",
-            "value": "$200 $100",
+            "value": "$200",
+            "newValue": "$100",
             "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
         },
         {
@@ -66,7 +71,8 @@
             "discount": "",
             "title": "Tênis",
             "text": "K-Swiss V8 - Masculino",
-            "value": "$200 $100",
+            "value": "$200",
+            "newValue": "$100",
             "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
         },
         {
@@ -74,7 +80,8 @@
             "discount": "",
             "title": "Tênis",
             "text": "K-Swiss V8 - Masculino",
-            "value": "$200 $100",
+            "value": "$200",
+            "newValue": "$100",
             "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
         },
         {
@@ -82,7 +89,8 @@
             "discount": "",
             "title": "Tênis",
             "text": "K-Swiss V8 - Masculino",
-            "value": "$200 $100",
+            "value": "$200",
+            "newValue": "$100",
             "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
         }
         
