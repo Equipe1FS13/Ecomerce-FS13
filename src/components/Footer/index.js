@@ -71,7 +71,7 @@ export default function Footer() {
                     </div>
                 </Grid>
             </Grid>
-            <div className="divFooter" >@ 2022 Digital College</div>
+            <div className="divFooter">@ 2022 Digital College</div>
         </div>
     )
 }
