@@ -28,7 +28,7 @@ export default function FeatureMainCollections() {
     };
 
     return (
-        <div>
+        <div className="colectionsMain">
             <h1 className='h1maincolection'>Coleções em destaque</h1>
             <div className='maincolectionsdiv'>
                 <section className='sectioncolection'>
