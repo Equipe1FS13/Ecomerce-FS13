@@ -6,6 +6,7 @@ div.featured-collections {
   margin: 100px;
   margin-bottom: 100px;
 
+
   // Estilizando os títulos, pode ser reaproveitado
   .collectionTitle {
     font-weight: bold;
@@ -20,10 +21,13 @@ div.featured-collections {
     min-height: 250px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: left;    
   }
 
   .imagecards {
     display: flex;
+    overflow: hidden;    
   }
 
   // Texto e botões alinhamento
@@ -37,7 +41,8 @@ div.featured-collections {
     .spanText {
       font-size: 25px;
       font-weight: bold;
-      font-family: Inter, sans-serif;
+      font-family: Inter, sans-serif;      
+      text-align: justify;
     }
   }
 
