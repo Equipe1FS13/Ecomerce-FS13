@@ -92,6 +92,69 @@
             "value": "$200",
             "newValue": "$100",
             "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
+        },
+        {
+            "id": 9,
+            "discount": "",
+            "title": "Tênis",
+            "text": "K-Swiss V8 - Masculino",
+            "value": "$200",
+            "newValue": "$100",
+            "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
+        },
+        {
+            "id": 10,
+            "discount": "",
+            "title": "Tênis",
+            "text": "K-Swiss V8 - Masculino",
+            "value": "$200",
+            "newValue": "$100",
+            "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
+        },
+        {
+            "id": 11,
+            "discount": "",
+            "title": "Tênis",
+            "text": "K-Swiss V8 - Masculino",
+            "value": "$200",
+            "newValue": "$100",
+            "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
+        },
+        {
+            "id": 12,
+            "discount": "",
+            "title": "Tênis",
+            "text": "K-Swiss V8 - Masculino",
+            "value": "$200",
+            "newValue": "$100",
+            "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
+        },
+        {
+            "id": 13,
+            "discount": "",
+            "title": "Tênis",
+            "text": "K-Swiss V8 - Masculino",
+            "value": "$200",
+            "newValue": "$100",
+            "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
+        },
+        {
+            "id": 14,
+            "discount": "",
+            "title": "Tênis",
+            "text": "K-Swiss V8 - Masculino",
+            "value": "$200",
+            "newValue": "$100",
+            "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
+        },
+        {
+            "id": 15,
+            "discount": "",
+            "title": "Tênis",
+            "text": "K-Swiss V8 - Masculino",
+            "value": "$200",
+            "newValue": "$100",
+            "image": "https://equipe1fs13.github.io/img/tenisProdutos.png"
         }
         
     ],

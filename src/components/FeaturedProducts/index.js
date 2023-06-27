@@ -41,6 +41,8 @@ export default function FeaturedProducts() {
         )
     }
 
+    const filteredItems = items.slice(0, 8);
+
     return(
         <div className="featuredProducts">
 
@@ -54,9 +56,16 @@ export default function FeaturedProducts() {
             </div>
 
             <Grid container spacing={4} className="container">
-                {items.map(cada => {
-                    return <Cards discount={cada.discount} image={cada.image} title={cada.title} text={cada.text} value={cada.value} newValue={cada.newValue}/>
-                })}
+                {filteredItems.map((cada, index) => (
+                    <Cards
+                        discount={cada.discount}
+                        image={cada.image}
+                        title={cada.title}
+                        text={cada.text}
+                        value={cada.value}
+                        newValue={cada.newValue}
+                    />
+                ))}
             </Grid>
         </div>
     )
