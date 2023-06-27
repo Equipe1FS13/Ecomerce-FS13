@@ -1,5 +1,6 @@
 import logo from "../Navbar/img/Vector.png"
 import searc from "../Navbar/img/Search.svg"
+import cart from "../Navbar/img/Group 53581.svg"
 import "./styles.scss";
 
 export default function Navbar() {
@@ -18,9 +19,13 @@ export default function Navbar() {
                             <img src={searc} alt="" />
                         </div>
                     </div>
-                    <div>CADASTRO</div>
-                    <div>ENTRAR</div>
-                    <div>CARRINHO</div>
+                    <div><a href="">Cadastre-se</a></div>
+                    <div><button className="Buttonpropsnavbar">Entrar</button></div>
+                    <div>
+                        <img src={cart} alt="" style={{
+                            cursor: "pointer"
+                        }}/>
+                    </div>
                 </nav>
             </section>
         </div>
