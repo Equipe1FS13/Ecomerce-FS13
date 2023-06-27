@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import Icon from '@mdi/react';
-import { mdiTshirtCrewOutline, mdiShoeSneaker, mdiHeadphones, mdiSunglasses, mdiDumbbell } from '@mdi/js';
-import { ReactComponent as Shoesicon} from "../../components/Navbar/Vector.svg"
+import { ReactComponent as Tshirticon} from "./img/camisa.svg"
+import { ReactComponent as Pantsicon} from "./img/Vector.svg"
+import { ReactComponent as Pantsicon2} from "./img/Vector.svg"
+import { ReactComponent as Phoneicon} from "./img/fone.svg"
+import { ReactComponent as Shoesicon} from "./img/sapato.svg"
 import './styles.scss';
 
 export default function FeatureMainCollections() {
 
     const [iconColors, setIconColors] = useState({
         tshirt: '#8F8F8F',
-        dumbbell: '#8F8F8F',
-        sunglasses: '#8F8F8F',
+        pants: '#8F8F8F',
+        pants2: '#8F8F8F',
         headphones: '#8F8F8F',
         sneakers: '#8F8F8F',
     });
@@ -38,28 +40,28 @@ export default function FeatureMainCollections() {
                         onMouseEnter={() => handleMouseEnter('tshirt')}
                         onMouseLeave={() => handleMouseLeave('tshirt')}
                     >
-                        <Icon path={mdiTshirtCrewOutline} size={4} color={iconColors.tshirt} />
-                        {/* <Shoesicon fill='red' stroke='pink'/> */}
+                        <Tshirticon  fill={iconColors.tshirt} />
+                        
                     </div>
                     <span>Camisetas</span>
                 </section>
                 <section className='sectioncolection'>
                     <div
                         className='divcontroler'
-                        onMouseEnter={() => handleMouseEnter('dumbbell')}
-                        onMouseLeave={() => handleMouseLeave('dumbbell')}
+                        onMouseEnter={() => handleMouseEnter('pants')}
+                        onMouseLeave={() => handleMouseLeave('pants')}
                     >
-                        <Icon path={mdiDumbbell} size={4} color={iconColors.dumbbell} />
+                        <Pantsicon stroke={iconColors.pants} />
                     </div>
                     <span>Treino</span>
                 </section>
                 <section className='sectioncolection'>
                     <div
                         className='divcontroler'
-                        onMouseEnter={() => handleMouseEnter('sunglasses')}
-                        onMouseLeave={() => handleMouseLeave('sunglasses')}
+                        onMouseEnter={() => handleMouseEnter('pants2')}
+                        onMouseLeave={() => handleMouseLeave('pants2')}
                     >
-                        <Icon path={mdiSunglasses} size={4} color={iconColors.sunglasses} />
+                        <Pantsicon2 stroke={iconColors.pants2} />
                     </div>
                     <span>Oculos</span>
                 </section>
@@ -69,7 +71,7 @@ export default function FeatureMainCollections() {
                         onMouseEnter={() => handleMouseEnter('headphones')}
                         onMouseLeave={() => handleMouseLeave('headphones')}
                     >
-                        <Icon path={mdiHeadphones} size={4} color={iconColors.headphones} />
+                        <Phoneicon stroke={iconColors.headphones} />
                     </div>
                     <span>Headphone</span>
                 </section>
@@ -79,7 +81,7 @@ export default function FeatureMainCollections() {
                         onMouseEnter={() => handleMouseEnter('sneakers')}
                         onMouseLeave={() => handleMouseLeave('sneakers')}
                     >
-                        <Icon path={mdiShoeSneaker} size={4} color={iconColors.sneakers} />
+                        <Shoesicon stroke={iconColors.sneakers} />
                     </div>
                     <span>Tenis</span>
                 </section>
