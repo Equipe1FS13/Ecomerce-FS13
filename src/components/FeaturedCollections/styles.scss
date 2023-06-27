@@ -38,6 +38,10 @@ div.featured-collections {
     justify-content: center;
     margin-left: 30px;
 
+    div{
+      margin-bottom: 10px;
+    }
+
     .spanText {
       font-size: 25px;
       font-weight: bold;
@@ -66,12 +70,12 @@ div.featured-collections {
   }
 
   // Estilo do rótulo com desconto
-  .rotulo {
+  span.rotulo {
     font-size: 14px;
     background-color: vars.$color-rotulo;
     color: vars.$color-text;
     border-radius: 30px;
-    width: 80px;
+    padding: 5px;    
     text-align: center;
     font-family: Inter, sans-serif;
     font-weight: 800;
