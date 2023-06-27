@@ -5,7 +5,10 @@ import './styles.scss'
 export default function Check() {
     return(
             <div className="checkbox">
-                <span className="title">Filtrar por</span> <br/>
+                <div className="title">
+                    <span >Filtrar por</span>
+                </div>
+                <hr />
                 <span className="titleSelect">Marka</span>
                     <div className="options">
                         <FormGroup>

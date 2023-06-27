@@ -12,17 +12,29 @@
         justify-content: space-between;
         margin-bottom: 3rem;
 
-        .productsTitle{
-            width: 420px;
-            height: 38px;
+        .productsText{
             font-family: 'Inter';
             font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 38px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
             letter-spacing: 0.75px;
             color: vars.$color-text;
+           
+
+            .productsTitle{
+                width: 420px;
+                height: 38px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 38px;
+                letter-spacing: 0.75px;
+                color: vars.$color-text;
+            }
         }
+        
     
         .link {
             width: 290px;
@@ -31,19 +43,16 @@
             display: flex;
             align-items: center;
 
-            a {
-                display: flex;
-                text-decoration: none;
-                color: vars.$color-pink;
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 34px;
-                letter-spacing: 0.75px;
-                margin-right: .9rem;
-    
-              }
+            .select{
+                color: vars.$color-text;
+                font-family: fonts.$font-inter;
+            }
+
+            .optionsSelect{
+                color: vars.$color-text;
+                font-family: fonts.$font-inter;
+            }
+            
           }  
     }
     

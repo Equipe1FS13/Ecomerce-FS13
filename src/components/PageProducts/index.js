@@ -47,10 +47,16 @@ export default function PageProducts() {
         )
     }
 
+    
+
     return(
         <div className="featuredProducts">
             <div className="divTitle">
-                <span className="productsTitle">Resultados para "Tênis" - 389 produtos</span>
+                <div className="productsText">
+                <span className="productsTitle">Resultados para "Tênis" - </span>
+                <span>398 produtos</span>
+                </div>
+                
 
                 <div className="link">
                     <FormControl sx={{ m: 1, minWidth: 120 }}>
@@ -60,9 +66,10 @@ export default function PageProducts() {
                             displayEmpty
                             inputProps={{ 'aria-label': 'Without label' }}
                             renderValue={(selected) => (
-                                <em>
-                                  <strong>Ordenar por:</strong> {selected || "mais relevantes"}
-                                </em>
+                                <span>
+                                    <strong className="select">Ordenar por:</strong> {selected || "mais relevantes"}
+                                </span>
+              
                               )}
                             >    
                             <MenuItem value="mais relevantes">mais relevantes</MenuItem>
@@ -81,7 +88,7 @@ export default function PageProducts() {
                     
                 <Grid item xs={9}>
                     <Grid container spacing={1} justifyContent="flex-end">
-                        {items.map((cada, index) => (
+                        {items.map((cada) => (
                             <Cards
                                 discount={cada.discount}
                                 image={cada.image}
