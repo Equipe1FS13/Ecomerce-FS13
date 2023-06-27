@@ -10,7 +10,7 @@ export default function Menu() {
     }
 
     return (
-        <div className="menu">
+        <div className="menu" style={{backgroundColor:"#FFFFFF"}}>
             <Link className={isActive('/')} to="/">Inicio</Link>
             <Link className={isActive('/produtos')} to="/produtos">Produtos</Link>
             <Link className={isActive('/categorias')} to="/categorias">Categorias</Link>

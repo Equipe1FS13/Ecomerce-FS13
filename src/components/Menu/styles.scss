@@ -4,11 +4,13 @@ $color-pink: #C92071;
 $color-text: #474747;
 
 .menu {
+
     a {
         color: $color-text;
         margin-right: 10px;
         text-decoration: none;
         font-family: Inter, sans-serif;
+        
 
         &:hover {
             color: $color-pink;

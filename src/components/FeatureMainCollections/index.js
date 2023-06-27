@@ -53,7 +53,7 @@ export default function FeatureMainCollections() {
                     >
                         <Pantsicon stroke={iconColors.pants} />
                     </div>
-                    <span>Treino</span>
+                    <span>Calças</span>
                 </section>
                 <section className='sectioncolection'>
                     <div
@@ -63,7 +63,7 @@ export default function FeatureMainCollections() {
                     >
                         <Pantsicon2 stroke={iconColors.pants2} />
                     </div>
-                    <span>Oculos</span>
+                    <span>Bonés</span>
                 </section>
                 <section className='sectioncolection'>
                     <div
@@ -83,7 +83,7 @@ export default function FeatureMainCollections() {
                     >
                         <Shoesicon stroke={iconColors.sneakers} />
                     </div>
-                    <span>Tenis</span>
+                    <span>Tênis</span>
                 </section>
             </div>
         </div>
