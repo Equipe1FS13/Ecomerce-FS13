@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Icon from '@mdi/react';
 import { mdiTshirtCrewOutline, mdiShoeSneaker, mdiHeadphones, mdiSunglasses, mdiDumbbell } from '@mdi/js';
+import { ReactComponent as Shoesicon} from "../../components/Navbar/Vector.svg"
 import './styles.scss';
 
 export default function FeatureMainCollections() {
@@ -38,6 +39,7 @@ export default function FeatureMainCollections() {
                         onMouseLeave={() => handleMouseLeave('tshirt')}
                     >
                         <Icon path={mdiTshirtCrewOutline} size={4} color={iconColors.tshirt} />
+                        {/* <Shoesicon fill='red' stroke='pink'/> */}
                     </div>
                     <span>Camisetas</span>
                 </section>

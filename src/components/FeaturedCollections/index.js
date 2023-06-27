@@ -18,14 +18,20 @@ export default function FeaturedCollections() {
                 <div className="card">
                     <div className="propsText">
 
-                        <span className="rotulo">
-                            {props.discount}
-                            {props.discount && "% OFF"}
-                        </span>
-                        <br/>
-                        <span className="spanText">{props.text}</span> <br />
+                        <div>
+                            <span className="rotulo">
+                                {props.discount}
+                                {props.discount && "% OFF"}
+                            </span>
+                        </div>
 
-                        <button className="Buttonprops">Comprar</button>
+                        <div>
+                            <span className="spanText">{props.text}</span>
+                        </div>
+
+                        <div>
+                            <button className="Buttonprops">Comprar</button>
+                        </div>
                     </div>
 
                     <div className="imagecards">
@@ -38,12 +44,12 @@ export default function FeaturedCollections() {
 
     return (
         <div className="featured-collections">
-            
+
             <span className="collectionTitle"> Coleções em destaque </span>
 
             <Grid container spacing={2}>
                 {items.map(cada => (
-                    <Card text={cada.title} discount={cada.discount} image={cada.image}  />                   
+                    <Card text={cada.title} discount={cada.discount} image={cada.image} />
                 ))}
             </Grid>
         </div>
