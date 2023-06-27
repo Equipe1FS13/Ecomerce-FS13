@@ -69,25 +69,37 @@ export default function FeatureCarrocel() {
                         {Math.abs(activeStep - index) <= 2 ? (
                             <div className='divcarousel'>
                                 <section className='sectioninformation'>
-                                    <span>
-                                        Melhores ofertas personalizadas
-                                    </span>
-                                    <h1>Queima de <br/>stoque Nike 🔥</h1>
-                                    <p>Consequat culpa exercitation mollit nisi excepteur do <br /> do tempor laboris eiusmod irure consectetur.</p>
-                                    <button>Ver Ofertas</button>
+
+                                    <div>
+                                        <span>
+                                            Melhores ofertas personalizadas
+                                        </span>
+                                    </div>
+
+                                    <div>
+                                        <h1>Queima de stoque Nike 🔥</h1>
+                                    </div>
+
+                                    <div>
+                                        <p>Consequat culpa exercitation mollit nisi excepteur do  do tempor laboris eiusmod irure consectetur.</p>
+                                    </div>
+
+                                    <div>
+                                        <button>Ver Ofertas</button>
+                                    </div>
                                 </section>
-                                <section>
-                                    <img src={step.imgPath} alt=""/>
+                                <section className='imagecarrossel'>
+                                    <img src={step.imgPath} alt="" />
                                 </section>
                             </div>
                         ) : null}
                         <MobileStepper
                             steps={maxSteps}
-                            position="static"                            
+                            position="static"
                             activeStep={activeStep}
                             nextButton={<div></div>}
                             backButton={<div></div>}
-                            style={{backgroundColor:"#F5F5F5", paddingBottom:"50px"}}                            
+                            style={{ backgroundColor: "#F5F5F5", paddingBottom: "50px" }}
                         />
                     </div>
                 ))}
