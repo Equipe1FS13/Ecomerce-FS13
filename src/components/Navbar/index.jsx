@@ -14,7 +14,7 @@ export default function Navbar() {
                     <div>INPUT</div>
                     <div>CADASTRO</div>
                     <div>ENTRAR</div>
-                    <div>CARRINHO DE COMPRAS</div>
+                    <div>CARRINHO</div>
                 </nav>
             </section>
         </div>
