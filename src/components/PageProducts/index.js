@@ -11,6 +11,7 @@ export default function PageProducts() {
     setAge(event.target.value);
   };
 
+  
     React.useEffect(() => {
         fetch('http://localhost:8000/products')
             .then(res => res.json())
@@ -20,8 +21,7 @@ export default function PageProducts() {
     const Cards = (props) => {
         return(
             <>
-            
-            <Grid item xs={3}>
+            <Grid item xs={4} className="cards">
               <div className="card">
                     <span className={`discount ${props.discount ? 'discounted' : ''}`}>
                         {props.discount}
@@ -59,28 +59,40 @@ export default function PageProducts() {
                             onChange={handleChange}
                             displayEmpty
                             inputProps={{ 'aria-label': 'Without label' }}
+                            renderValue={(selected) => (
+                                <em>
+                                  <strong>Ordenar por:</strong> {selected || "mais relevantes"}
+                                </em>
+                              )}
                             >    
-                            <MenuItem value="">
-                                <em><strong>Ordernar por:</strong> mais relevantes</em></MenuItem>
-                            <MenuItem value={10}>Mais Vendidos</MenuItem>
+                            <MenuItem value="mais relevantes">mais relevantes</MenuItem>
+                            <MenuItem value="mais vendidos">mais vendidos</MenuItem>
+                            <MenuItem value="menor preço">menor preço</MenuItem>
+                            <MenuItem value="maior preço">maior preço</MenuItem>
                         </Select>
                     </FormControl>
                 </div>
             </div>
 
-            <Grid container spacing={1} className="container">
+            <Grid container spacing={1}>
                 <Grid item xs={3}>
-                    <Check/> 
-                </Grid>              
-                    {items.map(cada => {
-                        return <Cards 
-                                discount={cada.discount} 
-                                image={cada.image} 
-                                title={cada.title} 
-                                text={cada.text} 
-                                value={cada.value} 
-                                newValue={cada.newValue}/>
-                        })}
+                    <Check/>
+                </Grid>
+                    
+                <Grid item xs={9}>
+                    <Grid container spacing={1} justifyContent="flex-end">
+                        {items.map((cada, index) => (
+                            <Cards
+                                discount={cada.discount}
+                                image={cada.image}
+                                title={cada.title}
+                                text={cada.text}
+                                value={cada.value}
+                                newValue={cada.newValue}
+                            />
+                        ))}
+                    </Grid>
+                </Grid>
             </Grid>
         </div>
     )
