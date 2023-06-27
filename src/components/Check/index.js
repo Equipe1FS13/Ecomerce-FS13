@@ -1,12 +1,13 @@
 import React from "react";
-import {Checkbox, FormGroup, FormControlLabel} from '@mui/material';
+import {Checkbox, FormGroup, FormControlLabel, Radio} from '@mui/material';
 import './styles.scss'
 
 export default function Check() {
     return(
             <div className="checkbox">
-                <span>Marka</span>
-                    <div>
+                <span className="title">Filtrar por</span> <br/>
+                <span className="titleSelect">Marka</span>
+                    <div className="options">
                         <FormGroup>
                         <FormControlLabel control={<Checkbox />} label="Adiddas" />
                         <FormControlLabel control={<Checkbox />} label="Calenciaga" />
@@ -16,8 +17,8 @@ export default function Check() {
                         </FormGroup>
                     </div>
 
-                    <span>Categoria</span>
-                    <div>
+                    <span className="titleSelect">Categoria</span>
+                    <div className="options">
                         <FormGroup>
                         <FormControlLabel control={<Checkbox />} label="Esporte e lazer" />
                         <FormControlLabel control={<Checkbox />} label="Casual" />
@@ -26,8 +27,8 @@ export default function Check() {
                         </FormGroup>
                     </div>
 
-                    <span>Gênero</span>
-                    <div>
+                    <span className="titleSelect">Gênero</span>
+                    <div className="options">
                         <FormGroup>
                         <FormControlLabel control={<Checkbox />} label="Masculino" />
                         <FormControlLabel control={<Checkbox />} label="Feminino" />
@@ -35,11 +36,11 @@ export default function Check() {
                         </FormGroup>
                     </div>
 
-                    <span>Estado</span>
-                    <div>
+                    <span className="titleSelect">Estado</span>
+                    <div className="options">
                         <FormGroup>
-                        <FormControlLabel control={<Checkbox />} label="Novo" />
-                        <FormControlLabel control={<Checkbox />} label="Usado" />
+                        <FormControlLabel control={<Radio />} label="Novo" />
+                        <FormControlLabel control={<Radio />} label="Usado" />
                         </FormGroup>
                     </div>
             </div>

@@ -5,5 +5,38 @@
 .checkbox{
     background-color: vars.$color-background-special;
     width: 280px;
-    height: 600px;
+
+
+
+    .title{
+        color: vars.$color-text;
+        font-family: fonts.$font-inter;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+        border-bottom: 1px solid #474747;
+    }
+
+    .titleSelect{
+        color: vars.$color-text;
+        font-family: fonts.$font-inter;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.75px;
+        
+        
+    }
+
+    .options{
+        color: vars.$color-text;
+        font-family: fonts.$font-inter;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        margin-bottom: 1rem;
+
+    }
 }
