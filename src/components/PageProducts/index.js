@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, MenuItem, FormControl, Select } from "@mui/material";
 import Check from "../Check";
+import {Link} from 'react-router-dom';
 import './styles.scss'
 
 export default function PageProducts() {
@@ -58,7 +59,7 @@ export default function PageProducts() {
                 </div>
                 
 
-                <div className="link">
+                <div className="select">
                     <FormControl sx={{ m: 1, minWidth: 120 }}>
                         <Select
                             value={age}
@@ -67,7 +68,7 @@ export default function PageProducts() {
                             inputProps={{ 'aria-label': 'Without label' }}
                             renderValue={(selected) => (
                                 <span>
-                                    <strong className="select">Ordenar por:</strong> {selected || "mais relevantes"}
+                                    <strong className="selected">Ordenar por:</strong> {selected || "mais relevantes"}
                                 </span>
               
                               )}
@@ -85,8 +86,10 @@ export default function PageProducts() {
                 <Grid item xs={3}>
                     <Check/>
                 </Grid>
-                    
+
+                   
                 <Grid item xs={9}>
+                <Link className="container" to={"/produtos/tênis/nike"}>
                     <Grid container spacing={1} justifyContent="flex-end">
                         {items.map((cada) => (
                             <Cards
@@ -99,6 +102,7 @@ export default function PageProducts() {
                             />
                         ))}
                     </Grid>
+                </Link>
                 </Grid>
             </Grid>
         </div>

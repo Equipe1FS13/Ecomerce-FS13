@@ -48,14 +48,14 @@
         }
         
     
-        .link {
+        .select {
             width: 290px;
             height: 34px;
             color: vars.$color-pink;
             display: flex;
             align-items: center;
 
-            .select{
+            .selected{
                 color: vars.$color-text;
                 font-family: fonts.$font-inter;
             }

@@ -2,6 +2,10 @@
 
 @use '../fonts.scss';
 
+.container{
+    text-decoration: none;
+}
+
 .featuredProducts{
     background-color: vars.$color-main-background;
     padding: 3rem;

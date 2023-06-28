@@ -4,6 +4,7 @@ import Categories from "./pages/Categories";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import Orders from "./pages/Orders";
+import FeaturedProducts from "./components/FeaturedProducts";
 
 export default function App() {
   return (
@@ -12,7 +13,7 @@ export default function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/categorias" element={<Categories/>}/>
         <Route path="/produtos" element={<Products/>}/>
-        <Route path="/produtos/:id" element={<ProductDetails/>}/>
+        <Route path="/produtos/tênis/nike" element={<ProductDetails/>}/>
         <Route path="/meus-pedidos" element={<Orders/>}/>
       </Routes>
     </BrowserRouter>

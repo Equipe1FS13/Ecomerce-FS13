@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import EastIcon from '@mui/icons-material/East';
+import {Link} from 'react-router-dom'
 import './styles.scss'
 
 export default function FeaturedProducts() {
@@ -49,13 +50,17 @@ export default function FeaturedProducts() {
             <div className="divTitle">
                 <span className="productsTitle">Produtos em alta</span>
 
-                <div className="link">
-                    <a href="/">Ver todos</a>
-                    <EastIcon/>
-                </div>
+                <Link className="container" to={"/produtos"}>
+                    <div className="link">
+                        <a href="/">Ver todos</a>
+                        <EastIcon/>
+                    </div>
+                </Link>
+                
             </div>
 
-            <Grid container spacing={4} className="container">
+            <Link className="container" to={"/produtos"}>
+            <Grid container spacing={4}>
                 {filteredItems.map((cada, index) => (
                     <Cards
                         discount={cada.discount}
@@ -67,6 +72,7 @@ export default function FeaturedProducts() {
                     />
                 ))}
             </Grid>
+            </Link>
         </div>
     )
 }
