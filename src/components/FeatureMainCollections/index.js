@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { ReactComponent as Tshirticon} from "./img/camisa.svg"
-import { ReactComponent as Pantsicon} from "./img/Vector.svg"
-import { ReactComponent as Pantsicon2} from "./img/Vector.svg"
-import { ReactComponent as Phoneicon} from "./img/fone.svg"
-import { ReactComponent as Shoesicon} from "./img/sapato.svg"
+import tshirt from "./img/camisa.svg"
+import pants from "./img/Vector.svg"
+import fones from "./img/fone.svg"
+import shoes from "./img/sapato.svg"
 import './styles.scss';
 
 export default function FeatureMainCollections() {
@@ -37,10 +36,9 @@ export default function FeatureMainCollections() {
                 <section className='sectioncolection'>
                     <div
                         className='divcontroler'
-                        onMouseEnter={() => handleMouseEnter('tshirt')}
-                        onMouseLeave={() => handleMouseLeave('tshirt')}
+                        
                     >
-                        <Tshirticon  fill={iconColors.tshirt} />
+                        <img src={tshirt} alt="tshirt" />
                         
                     </div>
                     <span>Camisetas</span>
@@ -48,40 +46,36 @@ export default function FeatureMainCollections() {
                 <section className='sectioncolection'>
                     <div
                         className='divcontroler'
-                        onMouseEnter={() => handleMouseEnter('pants')}
-                        onMouseLeave={() => handleMouseLeave('pants')}
+                        
                     >
-                        <Pantsicon stroke={iconColors.pants} />
+                        <img src={pants} alt="pants" />
                     </div>
                     <span>Calças</span>
                 </section>
                 <section className='sectioncolection'>
                     <div
                         className='divcontroler'
-                        onMouseEnter={() => handleMouseEnter('pants2')}
-                        onMouseLeave={() => handleMouseLeave('pants2')}
+                        
                     >
-                        <Pantsicon2 stroke={iconColors.pants2} />
+                        <img src={pants} alt="pants" />
                     </div>
                     <span>Bonés</span>
                 </section>
                 <section className='sectioncolection'>
                     <div
                         className='divcontroler'
-                        onMouseEnter={() => handleMouseEnter('headphones')}
-                        onMouseLeave={() => handleMouseLeave('headphones')}
+                        
                     >
-                        <Phoneicon stroke={iconColors.headphones} />
+                        <img src={fones} alt="fones" />
                     </div>
                     <span>Headphone</span>
                 </section>
                 <section className='sectioncolection'>
                     <div
                         className='divcontroler'
-                        onMouseEnter={() => handleMouseEnter('sneakers')}
-                        onMouseLeave={() => handleMouseLeave('sneakers')}
+                        
                     >
-                        <Shoesicon stroke={iconColors.sneakers} />
+                        <img src={shoes} alt="shoes" />
                     </div>
                     <span>Tênis</span>
                 </section>

@@ -16,7 +16,9 @@
 // $font-inter: 'Inter', sans-serif;
 
 
-
+.MuiMobileStepper-dotActive{
+    background-color: vars.$color-pink !important;
+}
 
 .divcarousel {
     display: flex;
