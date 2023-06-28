@@ -4,6 +4,10 @@
 
 
 
+*{
+    font-family: 'Inter';
+}
+
 .divisioncard {
     display: flex;
     justify-content: space-evenly;
@@ -30,10 +34,25 @@
 .priceDiv {
     display: flex;
     align-items: center;
+    
 
     p {
         padding-right: 10px;
+        font-weight: 700;
+        font-size: 16px;
+
+        span{
+            font-size: 32px;
+            font-weight: 700;
+        }
     }
+
+    
+}
+
+.spandecoration{
+    text-decoration: line-through;
+    color: vars.$color-light-gray;
 }
 
 
@@ -76,6 +95,7 @@ button.selected {
 
 .Laranja {
     background-color: #FF6969;
+    
 }
 
 .Preto{
@@ -85,6 +105,17 @@ button.selected {
 .Azulescuro{
     background-color: #6D70B7;
 }
+
+.Azulclaro:hover {
+    
+    border-radius: 50%;    
+    position: relative;
+    border: 2px solid #c92071;
+    
+    
+  }
+  
+    
 
 
 .buttoncomponentfinal{
