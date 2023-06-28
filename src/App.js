@@ -4,7 +4,7 @@ import Categories from "./pages/Categories";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import Orders from "./pages/Orders";
-import FeaturedProducts from "./components/FeaturedProducts";
+
 
 export default function App() {
   return (

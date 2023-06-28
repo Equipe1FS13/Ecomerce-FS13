@@ -10,7 +10,15 @@
     align-items: center;
     margin-top: 40px;
     padding-bottom: 40px;
-    padding-left: 30px;
+
+    .cadastro{
+        font-family: fonts.$font-inter;
+        color: vars.$color-text;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.75px;
+    }
 }
 
 

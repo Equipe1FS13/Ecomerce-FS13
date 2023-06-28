@@ -1,29 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+@use '../index.scss' as vars;
 
-$color-pink: #C92071;
-$color-text: #474747;
+@use '../fonts.scss';
+
 
 .menu {
-    padding-left: 100px;
+    padding-left: 48px;
     width: 100%;
 
 
     a {
-        color: $color-text;
+        color: vars.$color-text;
         margin-right: 10px;
         text-decoration: none;
-        font-family: Inter, sans-serif;
+        font-family: fonts.$font-inter;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.75px;
+        margin-right: 2rem;
         
 
         &:hover {
-            color: $color-pink;
-            border-bottom: 3px solid $color-pink;
+            color: vars.$color-pink;
+            border-bottom: 2px solid vars.$color-pink;
         }
 
         &.active {
             font-weight: bold;
-            border-bottom: 3px solid $color-pink;
-            color: $color-pink;
+            border-bottom: 2px solid vars.$color-pink;
+            color: vars.$color-pink;
         }
     }
 }
