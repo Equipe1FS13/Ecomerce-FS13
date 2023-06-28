@@ -2,6 +2,18 @@
 
 @use '../fonts.scss';
 
+
+.MuiInputBase-root.MuiInputBase-colorPrimary {
+    color:#474747;
+}
+
+.MuiInputBase-root.MuiInputBase-colorPrimary {
+    &.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: #474747;
+    }
+  }
+
+
 .featuredProducts{
     background-color: vars.$color-main-background;
     padding: 3rem;

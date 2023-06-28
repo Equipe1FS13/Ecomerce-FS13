@@ -2,10 +2,25 @@
 
 @use '../fonts.scss';
 
+.MuiCheckbox-colorPrimary.Mui-checked{
+    color:#C92071 !important;
+}
+
+.MuiRadio-colorPrimary.Mui-checked{
+    color:#C92071 !important;
+}
+
 .checkbox{
     background-color: vars.$color-background-special;
     width: 220px;
     padding: 2rem 2rem 1rem 2rem;
+
+    hr{
+        margin-bottom: 1rem;
+        background-color: #CCCCCC;
+        height: 1px;
+        border: none;
+    }
 
     .title{
         color: vars.$color-text;

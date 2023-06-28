@@ -8,7 +8,7 @@ export default function Check() {
                 <div className="title">
                     <span >Filtrar por</span>
                 </div>
-                <hr />
+                <hr/>
                 <span className="titleSelect">Marka</span>
                     <div className="options">
                         <FormGroup>
