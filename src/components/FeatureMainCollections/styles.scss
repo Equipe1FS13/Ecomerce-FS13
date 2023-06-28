@@ -8,6 +8,10 @@
     height: 18rem;
 }
 
+.divcontroler img:hover{
+    filter: invert(24%) sepia(99%) saturate(2064%) hue-rotate(312deg) brightness(79%) contrast(98%);
+}
+
 .maincolectionsdiv {
     display: flex;
     justify-content: center;
