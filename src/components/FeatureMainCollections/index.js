@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import tshirt from "./img/camisa.svg"
 import pants from "./img/Vector.svg"
 import fones from "./img/fone.svg"
@@ -7,7 +7,7 @@ import './styles.scss';
 
 export default function FeatureMainCollections() {
 
-    const [iconColors, setIconColors] = useState({
+   /* const [iconColors, setIconColors] = useState({
         tshirt: '#8F8F8F',
         pants: '#8F8F8F',
         pants2: '#8F8F8F',
@@ -27,7 +27,7 @@ export default function FeatureMainCollections() {
             ...prevColors,
             [element]: '#8F8F8F',
         }));
-    };
+    };*/
 
     return (
         <div className="colectionsMain">

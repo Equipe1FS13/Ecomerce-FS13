@@ -19,7 +19,7 @@ export default function Navbar() {
                             <img src={searc} alt="" />
                         </div>
                     </div>
-                    <div><a href="">Cadastre-se</a></div>
+                    <div><a className="cadastro" href="/">Cadastre-se</a></div>
                     <div><button className="Buttonpropsnavbar">Entrar</button></div>
                     <div>
                         <img src={cart} alt="" style={{
