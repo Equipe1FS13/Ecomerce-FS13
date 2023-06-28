@@ -1,0 +1,100 @@
+@use '../index.scss' as vars;
+
+@use '../fonts.scss';
+
+
+
+.divisioncard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.componentright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.imageAvaliable {
+    display: flex;
+    align-items: center;
+
+    img {
+        padding-right: 10px;
+    }
+}
+
+
+.priceDiv {
+    display: flex;
+    align-items: center;
+
+    p {
+        padding-right: 10px;
+    }
+}
+
+
+.heightdiv button {
+    margin-right: 5px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid vars.$color-light-gray;
+    border-radius: 4px;
+    background-color: vars.$color-background-special;
+    cursor: pointer;
+
+
+}
+
+button.selected {
+    background-color: #c92071;
+    color: white;
+}
+
+.divcolors {
+    width: 220px; 
+    height: 45px;     
+    display: flex;
+    margin-bottom: 30px;
+
+    div{
+        width: 220px;
+        margin-right: 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        
+    }
+    
+}
+
+.Azulclaro{
+    background-color: #6EEEFF;
+}
+
+.Laranja {
+    background-color: #FF6969;
+}
+
+.Preto{
+    background-color: #5D5D5D;
+}
+
+.Azulescuro{
+    background-color: #6D70B7;
+}
+
+
+.buttoncomponentfinal{
+    width: 220px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFB31F;
+    color: vars.$color-background-special;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
