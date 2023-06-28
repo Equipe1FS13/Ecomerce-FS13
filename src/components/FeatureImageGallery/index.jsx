@@ -26,9 +26,9 @@ export default function FeatureImageGallery() {
 
           <div className="priceDiv">
             <p>
-              R$ <span>219</span>
+              R$ <span>219</span>,00
             </p>
-            <span>219</span>
+            <span className='spandecoration'>219</span>
           </div>
 
           <h3>Descrição do produto</h3>
