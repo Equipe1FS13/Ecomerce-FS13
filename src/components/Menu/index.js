@@ -6,7 +6,11 @@ export default function Menu() {
     const url = useLocation();
 
     const isActive = (path) => {
+        if (path === "/produtos" || path === "/produtos/tênis/nike") {
+            return(url.pathname.includes("/produtos") ? "active" : "");
+        }
         return (path === url.pathname) ? "active" : "";
+        
     }
 
     return (
@@ -15,6 +19,7 @@ export default function Menu() {
             <Link className={isActive('/produtos')} to="/produtos">Produtos</Link>
             <Link className={isActive('/categorias')} to="/categorias">Categorias</Link>
             <Link className={isActive("/meus-pedidos")} to="/meus-pedidos">Meus Pedidos</Link>
+            
         </div>
     )
 }
