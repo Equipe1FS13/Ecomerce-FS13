@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import star from './img/Stars.svg';
 import avaliable from './img/Group 1103.svg';
+import arrowleft from './img/Vector 2.svg';
+import TenisMain from './img/TenisMain.svg';
+import arrowright from './img/Vector 1.svg';
 import './styles.scss';
 
 export default function FeatureImageGallery() {
@@ -13,7 +16,14 @@ export default function FeatureImageGallery() {
   return (
     <div>
       <div className="divisioncard">
-        <div>Carrossel com imagens</div>
+        <div>
+          <div className='divimagecarrocel'>
+            <button><img src={arrowleft} alt="" className='arrows' /></button>
+            <img className='tenismain' src={TenisMain} alt="" />
+            <button><img src={arrowright} alt="" className='arrows'/></button>
+          </div>
+          <div></div>
+        </div>
 
         <div className="componentright">
           <h1>Tênis Nike Revolution 6 Next Nature Masculino</h1>
@@ -33,7 +43,7 @@ export default function FeatureImageGallery() {
 
           <h3>Descrição do produto</h3>
 
-          <p>
+          <p className='descriptionsparag'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
           </p>
