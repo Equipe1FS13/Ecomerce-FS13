@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, MenuItem, FormControl, Select } from "@mui/material";
-import Check from "../Check";
+import CheckBox from "../CheckBox";
 import {Link} from 'react-router-dom';
 import './styles.scss'
 
@@ -84,7 +84,7 @@ export default function PageProducts() {
 
             <Grid container spacing={1}>
                 <Grid item xs={3}>
-                    <Check/>
+                    <CheckBox/>
                 </Grid>
 
                    
