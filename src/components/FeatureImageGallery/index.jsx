@@ -15,41 +15,45 @@ export default function FeatureImageGallery() {
     setSelectedSize(size);
   };
 
-    React.useEffect(() => {
-        fetch('http://localhost:8000/products')
+    React.useEffect(() => {  // ARRAY PARA PREENCHER A PAGE 
+        fetch('http://localhost:8000/productDetails')
             .then(res => res.json())
-            .then(data => setItems(data));
+            .then(data => setItems(data)); // SETA O USESTATE E ATUALIZA ITEMS
     }, []);
+
+
+    const Card = (props) => { //FUNCÃO PARA ADICIONAR O CARD COM INFORMAÇÕES DA API
+      return(
+          <>
+            <Grid item xs={2}>
+              <div className='grid' >
+                <div className='cards' justifyContent="center">
+                  <img className="imgcard" src={props.image} alt="" />
+                </div>
+              </div>
+            </Grid>
+          </>
+          )
+    }
+
 
   return (
     <div>
       <div className="divisioncard">
-        <div className="containerimg">
+        <div>
           <div className='divimagecarrocel'>
             <button><img src={arrowleft} alt="" className='arrows' /></button>
             <img className='tenismain' src={TenisMain} alt="" />
             <button><img src={arrowright} alt="" className='arrows'/></button>
           </div>
-          <Grid container spacing={4}>
-            <Grid item xs={2}>
-              <div className='grid' >
-                <div className='cards' justifyContent="center">
-                  <img className="imgcard" src={TenisMain} alt="" />
-                </div>
-                <div  className='cards' >
-                  <img className="imgcard" src={TenisMain} alt="" />
-                </div>
-                <div  className='cards'>
-                  <img className="imgcard" src={TenisMain} alt="" />
-                </div>
-                <div  className='cards'>
-                  <img className="imgcard" src={TenisMain} alt="" />
-                </div>
-                <div  className='cards'>
-                  <img className="imgcard" src={TenisMain} alt="" />
-                </div>
-              </div>
-            </Grid>
+          <Grid container> 
+            {items.map(cada => { // MAP PARA PODER APARECER OS CARDS
+              return(
+              <Card
+              image={cada.image}
+              />
+              )
+            })}
             </Grid>
         </div>
 
