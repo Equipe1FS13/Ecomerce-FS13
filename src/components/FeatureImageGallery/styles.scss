@@ -17,14 +17,42 @@
     align-items: center;
     width: 1440px;
     height: 1000px;    
-    padding-left: 50px;
+    background-color: #FFB31F;
 }
+
+.grid{
+    margin-top: 1rem;
+    width: 700px;
+    height: 6rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+        .cards{
+            width: 8rem;
+            height: 6rem;
+            background-color: #ffffff;
+            margin: 1rem;
+            border-radius: 3px;
+
+            .imgcard{
+                margin: 1.5rem 1rem 1rem 1rem;
+                display: flex;
+                justify-content: center;
+                width: 5rem;
+                
+            }
+        }
+        
+
+}
+
 
 .divimagecarrocel{
     display: flex;
     width: 700px;
     height: 640px;
-    background-color: #E2E3FF;
+    background-color: hsl(238, 100%, 94%);
 
     button{
         border: none !important;

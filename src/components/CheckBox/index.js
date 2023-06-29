@@ -1,8 +1,19 @@
 import React from "react";
-import {Checkbox, FormGroup, FormControlLabel, Radio} from '@mui/material';
+import {Checkbox, FormGroup, FormControlLabel, Radio, RadioGroup} from '@mui/material';
 import './styles.scss'
 
-export default function Check() {
+export default function CheckBox() {
+    const [checkbox, setCheckbox] = React.useState("");
+    const [radio, setRadio] = React.useState("");
+
+    const selected = (event) => {
+        setCheckbox(event.target.value);
+    }
+
+    const  select = (event) => {
+        setRadio(event.target.value);
+    };
+
     return(
             <div className="checkbox">
                 <div className="title">
@@ -11,7 +22,7 @@ export default function Check() {
                 <hr/>
                 <span className="titleSelect">Marka</span>
                     <div className="options">
-                        <FormGroup>
+                        <FormGroup value={checkbox} onChange={selected}>
                         <FormControlLabel control={<Checkbox />} label="Adiddas" />
                         <FormControlLabel control={<Checkbox />} label="Calenciaga" />
                         <FormControlLabel control={<Checkbox />} label="K-Swiss" />
@@ -22,7 +33,7 @@ export default function Check() {
 
                     <span className="titleSelect">Categoria</span>
                     <div className="options">
-                        <FormGroup>
+                        <FormGroup value={checkbox} onChange={selected}>
                         <FormControlLabel control={<Checkbox />} label="Esporte e lazer" />
                         <FormControlLabel control={<Checkbox />} label="Casual" />
                         <FormControlLabel control={<Checkbox />} label="Utilitário" />
@@ -32,7 +43,7 @@ export default function Check() {
 
                     <span className="titleSelect">Gênero</span>
                     <div className="options">
-                        <FormGroup>
+                        <FormGroup value={checkbox} onChange={selected}>
                         <FormControlLabel control={<Checkbox />} label="Masculino" />
                         <FormControlLabel control={<Checkbox />} label="Feminino" />
                         <FormControlLabel control={<Checkbox />} label="Unisex" />
@@ -42,8 +53,10 @@ export default function Check() {
                     <span className="titleSelect">Estado</span>
                     <div className="options">
                         <FormGroup>
-                        <FormControlLabel control={<Radio />} label="Novo" />
-                        <FormControlLabel control={<Radio />} label="Usado" />
+                        <RadioGroup value={radio} onChange={select}>
+                        <FormControlLabel control={<Radio />} value="novo" label="Novo" />
+                        <FormControlLabel control={<Radio />} value="usado" label="Usado" />
+                        </RadioGroup>
                         </FormGroup>
                     </div>
             </div>
