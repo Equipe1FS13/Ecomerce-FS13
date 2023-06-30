@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import { Grid } from "@mui/material";
 import star from './img/Stars.svg';
 import avaliable from './img/Group 1103.svg';
@@ -15,19 +15,19 @@ export default function FeatureImageGallery() {
     setSelectedSize(size);
   };
 
-    React.useEffect(() => {  // ARRAY PARA PREENCHER A PAGE 
+    React.useEffect(() => {  // BUSCA AS INFORMAÇÕES DO ARRAY PARA PREENCHER A PAGE 
         fetch('http://localhost:8000/productDetails')
             .then(res => res.json())
-            .then(data => setItems(data)); // SETA O USESTATE E ATUALIZA ITEMS
+            .then(data => setItems(data)); // SETA O USESTATE E ATUALIZA ITEMS COM AS INFORMAÇÕESDO ARRAY
     }, []);
 
 
     const Card = (props) => { //FUNCÃO PARA ADICIONAR O CARD COM INFORMAÇÕES DA API
       return(
           <>
-            <Grid item xs={2}>
+            <Grid item xs={2.4}>
               <div className='grid' >
-                <div className='cards' justifyContent="center">
+                <div className='cards'>
                   <img className="imgcard" src={props.image} alt="" />
                 </div>
               </div>
@@ -41,6 +41,9 @@ export default function FeatureImageGallery() {
     <div>
       <div className="divisioncard">
         <div>
+          <div className="rota"> 
+           <strong>Home</strong> / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino
+          </div>
           <div className='divimagecarrocel'>
             <button><img src={arrowleft} alt="" className='arrows' /></button>
             <img className='tenismain' src={TenisMain} alt="" />
@@ -56,7 +59,7 @@ export default function FeatureImageGallery() {
             })}
             </Grid>
         </div>
-
+        
         <div className="componentright">
           <h1>Tênis Nike Revolution 6 Next Nature Masculino</h1>
 
@@ -125,7 +128,7 @@ export default function FeatureImageGallery() {
           </div>
 
           <button className='buttoncomponentfinal'>Comprar</button>
-        </div>
+        </div> 
       </div>
     </div>
   );

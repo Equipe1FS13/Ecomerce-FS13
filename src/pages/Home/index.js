@@ -26,7 +26,7 @@ export default function Home() {
             <FeatureMainCollections/>
             
 
-           <FeaturedProducts/>
+           <FeaturedProducts sliceNumber={8}/>
 
 
             <FeaturedSpecialOffer />

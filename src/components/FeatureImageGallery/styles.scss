@@ -16,31 +16,36 @@
     justify-content: space-around;
     align-items: center;
     width: 1440px;
-    height: 1000px;    
-    background-color: #FFB31F;
+    height: 800px;    
+    background-color: vars.$color-main-background;
+
+    .rota{
+       margin-bottom: 2rem; 
+       font-family: fonts.$font-inter;
+       color: vars.$color-text;
+       font-weight: 400;
+    }
 }
 
 .grid{
-    margin-top: 1rem;
-    width: 700px;
-    height: 6rem;
+   
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-
         .cards{
-            width: 8rem;
-            height: 6rem;
-            background-color: #ffffff;
-            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6D70B7;
             border-radius: 3px;
+            height: 6rem;
+            width: 8rem;
 
             .imgcard{
-                margin: 1.5rem 1rem 1rem 1rem;
                 display: flex;
-                justify-content: center;
-                width: 5rem;
-                
+                align-items: center;
+                width: 8rem;
+                background-color: #6EEEFF;
             }
         }
         
