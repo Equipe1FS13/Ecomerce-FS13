@@ -177,7 +177,7 @@
             "value": "220",
             "newValue": "219",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non consequuntur odit quibusdam odio iste! Obcaecati delectus qui doloribus labore dignissimos nisi eius quae, sed cum ad unde, modi culpa reprehenderit!",
-            "image": "https://equipe1fs13.github.io/img/tenisCarrosel.png"
+            "image": "https://equipe1fs13.github.io/img/image1.svg"
         },
         {
             "id": 2,
@@ -186,7 +186,7 @@
             "value": "220",
             "newValue": "219",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non consequuntur odit quibusdam odio iste! Obcaecati delectus qui doloribus labore dignissimos nisi eius quae, sed cum ad unde, modi culpa reprehenderit!",
-            "image": "https://equipe1fs13.github.io/img/tenisCarrosel.png"
+            "image": "https://equipe1fs13.github.io/img/image2.svg"
         },
         {
             "id": 3,
@@ -195,7 +195,7 @@
             "value": "220",
             "newValue": "219",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non consequuntur odit quibusdam odio iste! Obcaecati delectus qui doloribus labore dignissimos nisi eius quae, sed cum ad unde, modi culpa reprehenderit!",
-            "image": "https://equipe1fs13.github.io/img/tenisCarrosel.png"
+            "image": "https://equipe1fs13.github.io/img/image3.svg"
         },
         {
             "id": 4,
@@ -204,7 +204,16 @@
             "value": "220",
             "newValue": "219",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non consequuntur odit quibusdam odio iste! Obcaecati delectus qui doloribus labore dignissimos nisi eius quae, sed cum ad unde, modi culpa reprehenderit!",
-            "image": "https://equipe1fs13.github.io/img/tenisCarrosel.png"
+            "image": "https://equipe1fs13.github.io/img/image4.svg"
+        },
+        {
+            "id": 5,
+            "title": "Tênis Nike Revolution 6 Next Nature Masculino",
+            "details": "Casual | Nike | REF:38416711",
+            "value": "220",
+            "newValue": "219",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non consequuntur odit quibusdam odio iste! Obcaecati delectus qui doloribus labore dignissimos nisi eius quae, sed cum ad unde, modi culpa reprehenderit!",
+            "image": "https://equipe1fs13.github.io/img/image5.svg"
         }
 
     ]

@@ -4,7 +4,7 @@ import EastIcon from '@mui/icons-material/East';
 import {Link} from 'react-router-dom'
 import './styles.scss'
 
-export default function FeaturedProducts() {
+export default function FeaturedProducts({ sliceNumber }) {
     const [items, setItems] = React.useState([]);
 
     React.useEffect(() => {
@@ -42,7 +42,7 @@ export default function FeaturedProducts() {
         )
     }
 
-    const filteredItems = items.slice(0, 8);
+    const filteredItems = items.slice(0, sliceNumber);
 
     return(
         <div className="featuredProducts">

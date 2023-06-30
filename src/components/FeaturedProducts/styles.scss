@@ -8,18 +8,15 @@
 
 .featuredProducts{
     background-color: vars.$color-main-background;
-    padding: 3rem;
-    margin-bottom: 100px;
-   
+    
     .divTitle{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1rem;
 
         .productsTitle{
             width: 220px;
             height: 38px;
-            font-family: 'Inter';
+            font-family: fonts.$font-inter;
             font-style: normal;
             font-weight: 700;
             font-size: 24px;
@@ -39,7 +36,7 @@
                 display: flex;
                 text-decoration: none;
                 color: vars.$color-pink;
-                font-family: 'Inter';
+                font-family: fonts.$font-inter;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
@@ -84,6 +81,7 @@
         font-style: normal;
         font-family: fonts.$font-inter;
         line-height: 2rem;
+        padding-bottom: 2rem;
 
         .title{
             color: vars.$color-text-products;
@@ -112,7 +110,7 @@
         }
 
         .newValue{
-            font-family: 'Inter';
+            font-family: fonts.$font-inter;
             font-style: normal;
             font-weight: 700;
             font-size: 24px;
