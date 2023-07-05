@@ -12,6 +12,7 @@ export default function PageProducts() {
     setAge(event.target.value);
   };
 
+   
   
     React.useEffect(() => {
         fetch('http://localhost:8000/products')

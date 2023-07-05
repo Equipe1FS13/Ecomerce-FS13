@@ -27,13 +27,7 @@ export default function FeatureImageGallery() {
           <>
             <Grid item xs={2.4}>
               <div className='grid' >
-                <div className='cards'>
-
-                  <div>{props.title}</div>
-                  <div>{props.details}</div>
-                  <div>{props.price}</div>
-                  <div>{props.newprice}</div>
-                  <div>{props.description}</div>
+                <div className='cards' style={{ backgroundColor: props.color }}>
                   <img className="imgcard" src={props.image} alt="" />
                 </div>
               </div>
@@ -56,13 +50,11 @@ export default function FeatureImageGallery() {
             <button><img src={arrowright} alt="" className='arrows'/></button>
           </div>
           <Grid container> 
-            {items.map(cada => { // MAP PARA PODER APARECER OS CARDS
-              return(
-              <Card
-              image={cada.image}
-              />
-              )
-            })}
+              <Card  image={items[0]?.image} color={'#E2E3FF'} />
+              <Card  image={items[1]?.image} color={'#FFE8BC'}/>
+              <Card  image={items[2]?.image} color={'#FFC0BC'}/>
+              <Card  image={items[3]?.image} color={'#DEC699'}/>
+              <Card  image={items[4]?.image} color={'#E8DFCF'}/>
             </Grid>
         </div>
         

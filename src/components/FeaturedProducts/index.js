@@ -6,6 +6,7 @@ import './styles.scss'
 
 export default function FeaturedProducts({ sliceNumber }) {
     const [items, setItems] = React.useState([]);
+    
 
     React.useEffect(() => {
         fetch('http://localhost:8000/products')
@@ -23,8 +24,8 @@ export default function FeaturedProducts({ sliceNumber }) {
                         {props.discount && "% OFF"}
                     </span>
                     <br/>
-                    <div className="img">
-                        <img src={props.image} alt="" />
+                    <div>
+                        <img className="image" src={props.image} alt="" />
                     </div>
               </div>
 
