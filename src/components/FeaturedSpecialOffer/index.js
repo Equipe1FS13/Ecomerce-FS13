@@ -40,7 +40,7 @@ export default function FeaturedSpecialOffer() {
         <div className="featured-specialoffer" >
 
             <Grid container spacing={2}>
-                {items.map(cada => (
+               {items.map(cada => (
                     <Card image={cada.image} title={cada.title} text={cada.text} />
                 ))}
             </Grid>

@@ -56,6 +56,15 @@
         box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);
         border-radius: 4px;
         
+
+        .image{
+            max-width: 100% !important;
+            height: auto;
+            object-fit: cover;
+            
+        }
+
+
         .discounted{
             position: absolute;
             display: flex;
