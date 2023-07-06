@@ -21,17 +21,6 @@ export default function FeatureImageGallery() {
     }, []);
 
 
-    const CardsMain = (props) => {
-      return(
-      <>
-      <Grid item xs={6}>
-        <div className='divimagecarrocel'>
-          <button><img src={arrowleft} alt="" className='arrows' /></button>
-            <img className='tenismain' src={props.image} alt="" />
-          <button><img src={arrowright} alt="" className='arrows'/></button>
-        </div>
-      </Grid>
-
       <Grid item xs={6}>
         <div className="componentright">
           <h1>{props.title}</h1>
