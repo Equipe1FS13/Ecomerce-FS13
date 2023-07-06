@@ -29,7 +29,7 @@
             "marka": "nike",
             "gender": "feminino",
             "value": "$200",
-            "newValue": "$189",
+            "newValue": "$100",
             "image": "https://github.com/Equipe1FS13/equipe1fs13.github.io/blob/main/img/nikeF.png?raw=true"
         },
         {
@@ -39,8 +39,8 @@
             "text": "Nike - Masculino",
             "marka": "nike",
             "gender": "masculino",
-            "value": "$259",
-            "newValue": "$229",
+            "value": "$200",
+            "newValue": "$100",
             "image": "https://github.com/Equipe1FS13/equipe1fs13.github.io/blob/main/img/addidasM.png?raw=true"
         },
         {
