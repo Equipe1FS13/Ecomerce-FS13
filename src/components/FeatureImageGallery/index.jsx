@@ -3,7 +3,6 @@ import { Grid } from "@mui/material";
 import star from './img/Stars.svg';
 import avaliable from './img/Group 1103.svg';
 import arrowleft from './img/Vector 2.svg';
-import TenisMain from './img/TenisMain.svg';
 import arrowright from './img/Vector 1.svg';
 import './styles.scss';
 
@@ -22,49 +21,11 @@ export default function FeatureImageGallery() {
     }, []);
 
 
-    const Card = (props) => { //FUNCÃO PARA ADICIONAR O CARD COM INFORMAÇÕES DA API
-      return(
-          <>
-            <Grid item xs={2.4}>
-              <div className='grid' >
-
-                <div className='cards'>
-                <div className='cards' style={{ backgroundColor: props.color }}>
-
-                  <img className="imgcard" src={props.image} alt="" />
-                </div>
-              </div>
-            </Grid>
-          </>
-          )
-    }
-
-
-  return (
-    <div>
-      <div className="divisioncard">
-        <div>
-          <div className="rota"> 
-           <strong>Home</strong> / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino
-          </div>
-          <div className='divimagecarrocel'>
-            <button><img src={arrowleft} alt="" className='arrows' /></button>
-            <img className='tenismain' src={TenisMain} alt="" />
-            <button><img src={arrowright} alt="" className='arrows'/></button>
-          </div>
-          <Grid container> 
-              <Card  image={items[0]?.image} color={'#E2E3FF'} />
-              <Card  image={items[1]?.image} color={'#FFE8BC'}/>
-              <Card  image={items[2]?.image} color={'#FFC0BC'}/>
-              <Card  image={items[3]?.image} color={'#DEC699'}/>
-              <Card  image={items[4]?.image} color={'#E8DFCF'}/>
-            </Grid>
-        </div>
-        
+      <Grid item xs={6}>
         <div className="componentright">
-          <h1>Tênis Nike Revolution 6 Next Nature Masculino</h1>
+          <h1>{props.title}</h1>
 
-          <p>Casual | Nike | REF:38416711</p>
+          <p>{props.details}</p>
           <div className="imageAvaliable">
             <img src={star} alt="" />
             <img src={avaliable} alt="" />
@@ -72,16 +33,15 @@ export default function FeatureImageGallery() {
 
           <div className="priceDiv">
             <p>
-              R$ <span>219</span>,00
+              R$ <span>{props.value}</span>,00
             </p>
-            <span className='spandecoration'>219</span>
+            <span className='spandecoration'>{props.newValue}</span>
           </div>
 
           <h3>Descrição do produto</h3>
 
           <p className='descriptionsparag'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            {props.description}
           </p>
 
           <h3>Tamanho</h3>
@@ -130,6 +90,48 @@ export default function FeatureImageGallery() {
 
           <button className='buttoncomponentfinal'>Comprar</button>
         </div> 
+      </Grid>
+      </>
+      )
+    }
+
+
+    const Card = (props) => { //FUNCÃO PARA ADICIONAR O CARD COM INFORMAÇÕES DA API
+      return(
+          <>
+            <Grid item xs={2.4}>
+              <div className='grid' >
+                <div className='cards' style={{ backgroundColor: props.color }}>
+                  <img className="imgcard" src={props.image} alt="" />
+                </div>
+              </div>
+            </Grid>
+          </>
+          )
+    }
+
+
+  return (
+    <div>
+      <div className="divisioncard">
+        <div>
+          <div className="rota"> 
+           <strong>Home</strong> / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino
+          </div>
+
+          <Grid container> 
+          
+            <CardsMain image={items[0]?.image} title={items[0]?.title} details={items[0]?.details} value={items[0]?.value} newValue={items[0]?.newValue} description={items[0]?.description}/>
+         
+            <Card  image={items[0]?.image} color={'#E2E3FF'} />
+            <Card  image={items[1]?.image} color={'#FFE8BC'}/>
+            <Card  image={items[2]?.image} color={'#FFC0BC'}/>
+            <Card  image={items[3]?.image} color={'#DEC699'}/>
+            <Card  image={items[4]?.image} color={'#E8DFCF'}/>
+          </Grid>
+        </div>
+        
+        
       </div>
     </div>
   );
