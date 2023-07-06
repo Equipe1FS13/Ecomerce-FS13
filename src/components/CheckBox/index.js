@@ -6,9 +6,15 @@ export default function CheckBox() {
     const [checkbox, setCheckbox] = React.useState("");
     const [radio, setRadio] = React.useState("");
 
+
     const selected = (event) => {
-        setCheckbox(event.target.value);
+        const checked = event.target.checked 
+            
+        if (checked){
+            alert('ok')
+        }   
     }
+    
 
     const  select = (event) => {
         setRadio(event.target.value);
