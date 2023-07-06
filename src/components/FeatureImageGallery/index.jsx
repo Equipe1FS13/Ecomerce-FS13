@@ -29,11 +29,7 @@ export default function FeatureImageGallery() {
               <div className='grid' >
                 <div className='cards'>
 
-                  <div>{props.title}</div>
-                  <div>{props.details}</div>
-                  <div>{props.price}</div>
-                  <div>{props.newprice}</div>
-                  <div>{props.description}</div>
+                 
                   <img className="imgcard" src={props.image} alt="" />
                 </div>
               </div>
