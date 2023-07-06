@@ -20,7 +20,8 @@ export default function FeatureImageGallery() {
             .then(data => setItems(data));
     }, []);
 
-      const CardsMain = (props) => {
+    
+    const CardsMain = (props) => {
       return(
       <>
         <Grid item xs={6}>
@@ -117,7 +118,7 @@ export default function FeatureImageGallery() {
               </div>
             </Grid>
           </>
-          )
+        )
     }
 
 
