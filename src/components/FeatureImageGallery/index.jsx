@@ -23,90 +23,90 @@ export default function FeatureImageGallery() {
       const CardsMain = (props) => {
       return(
       <>
-      <Grid item xs={6}>
-        <div className='divimagecarrocel'>
-          <button><img src={arrowleft} alt="" className='arrows' /></button>
-            <img className='tenismain' src={props.image} alt="" />
-          <button><img src={arrowright} alt="" className='arrows'/></button>
-        </div>
-      </Grid>
-      
-      <Grid item xs={6}>
-        <div className="componentright">
-          <h1>{props.title}</h1>
-
-          <p>{props.details}</p>
-          <div className="imageAvaliable">
-            <img src={star} alt="" />
-            <img src={avaliable} alt="" />
+        <Grid item xs={6}>
+          <div className='divimagecarrocel'>
+            <button><img src={arrowleft} alt="" className='arrows' /></button>
+              <img className='tenismain' src={props.image} alt="" />
+            <button><img src={arrowright} alt="" className='arrows'/></button>
           </div>
+        </Grid>
 
-          <div className="priceDiv">
-            <p>
-              R$ <span>{props.value}</span>,00
+        <Grid item xs={6}>
+          <div className="componentright">
+            <h1>{props.title}</h1>
+
+            <p>{props.details}</p>
+            <div className="imageAvaliable">
+              <img src={star} alt="" />
+              <img src={avaliable} alt="" />
+            </div>
+
+            <div className="priceDiv">
+              <p>
+                R$ <span>{props.value}</span>,00
+              </p>
+              <span className='spandecoration'>{props.newValue}</span>
+            </div>
+
+            <h3>Descrição do produto</h3>
+
+            <p className='descriptionsparag'>
+              {props.description}
             </p>
-            <span className='spandecoration'>{props.newValue}</span>
-          </div>
 
-          <h3>Descrição do produto</h3>
+            <h3>Tamanho</h3>
 
-          <p className='descriptionsparag'>
-            {props.description}
-          </p>
+            <div className="heightdiv">
+              <button
+                className={selectedSize === '39' ? 'selected' : ''}
+                onClick={() => handleSizeClick('39')}
+              >
+                39
+              </button>
+              <button
+                className={selectedSize === '40' ? 'selected' : ''}
+                onClick={() => handleSizeClick('40')}
+              >
+                40
+              </button>
+              <button
+                className={selectedSize === '41' ? 'selected' : ''}
+                onClick={() => handleSizeClick('41')}
+              >
+                41
+              </button>
+              <button
+                className={selectedSize === '42' ? 'selected' : ''}
+                onClick={() => handleSizeClick('42')}
+              >
+                42
+              </button>
+              <button
+                className={selectedSize === '43' ? 'selected' : ''}
+                onClick={() => handleSizeClick('43')}
+              >
+                43
+              </button>
+            </div>
 
-          <h3>Tamanho</h3>
+            <h3>Tamanho</h3>
 
-          <div className="heightdiv">
-            <button
-              className={selectedSize === '39' ? 'selected' : ''}
-              onClick={() => handleSizeClick('39')}
-            >
-              39
-            </button>
-            <button
-              className={selectedSize === '40' ? 'selected' : ''}
-              onClick={() => handleSizeClick('40')}
-            >
-              40
-            </button>
-            <button
-              className={selectedSize === '41' ? 'selected' : ''}
-              onClick={() => handleSizeClick('41')}
-            >
-              41
-            </button>
-            <button
-              className={selectedSize === '42' ? 'selected' : ''}
-              onClick={() => handleSizeClick('42')}
-            >
-              42
-            </button>
-            <button
-              className={selectedSize === '43' ? 'selected' : ''}
-              onClick={() => handleSizeClick('43')}
-            >
-              43
-            </button>
-          </div>
+            <div className='divcolors'>
+              <div className='Azulclaro'></div>
+              <div className='Laranja'></div>
+              <div className='Preto'></div>
+              <div className='Azulescuro'></div>
+            </div>
 
-          <h3>Tamanho</h3>
-
-          <div className='divcolors'>
-            <div className='Azulclaro'></div>
-            <div className='Laranja'></div>
-            <div className='Preto'></div>
-            <div className='Azulescuro'></div>
-          </div>
-
-          <button className='buttoncomponentfinal'>Comprar</button>
-        </div> 
-      </Grid>
+            <button className='buttoncomponentfinal'>Comprar</button>
+          </div> 
+        </Grid>
       </>
       )
     }
 
 
-    const Card = (props) => { //FUNCÃO PARA ADICIONAR O CARD COM INFORMAÇÕES DA API
+    const Card = (props) => {
       return(
           <>
             <Grid item xs={2.4}>
