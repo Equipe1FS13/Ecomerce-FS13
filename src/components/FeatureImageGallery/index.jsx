@@ -27,7 +27,10 @@ export default function FeatureImageGallery() {
           <>
             <Grid item xs={2.4}>
               <div className='grid' >
+
+                <div className='cards'>
                 <div className='cards' style={{ backgroundColor: props.color }}>
+
                   <img className="imgcard" src={props.image} alt="" />
                 </div>
               </div>
