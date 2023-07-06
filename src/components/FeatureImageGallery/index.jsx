@@ -14,10 +14,10 @@ export default function FeatureImageGallery() {
     setSelectedSize(size);
   };
 
-    React.useEffect(() => {  // BUSCA AS INFORMAÇÕES DO ARRAY PARA PREENCHER A PAGE 
+    React.useEffect(() => {  
         fetch('http://localhost:8000/productDetails')
             .then(res => res.json())
-            .then(data => setItems(data)); // SETA O USESTATE E ATUALIZA ITEMS COM AS INFORMAÇÕESDO ARRAY
+            .then(data => setItems(data));
     }, []);
 
       const CardsMain = (props) => {
