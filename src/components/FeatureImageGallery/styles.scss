@@ -7,14 +7,14 @@
 *{
     font-family: 'Inter';
     
-    padding: 0;
-    box-sizing: border-box;
+   
 }
 
 .divisioncard {
     display: flex;
     justify-content: space-around;
     align-items: center;    
+    padding-left: 4%;
     background-color: vars.$color-main-background;
 
     .rota{
@@ -28,7 +28,7 @@
 .grid{
    
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
         .cards{
@@ -69,14 +69,14 @@
 }
 
 .tenismain{
-    width: 672px !important;
+    width: 649px !important;
 }
 
 .componentright {
     display: flex;
     flex-direction: column;
     align-items: flex-start;    
-    width: 50%;    
+    height: 100%;
     padding-left: 60px;
     padding-right: 60px; 
     
@@ -179,7 +179,6 @@ button.selected {
 .Azulclaro:hover {
     
     border-radius: 50%;    
-    position: relative;
     border: 2px solid #c92071;
     
     
