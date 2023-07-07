@@ -110,7 +110,7 @@ export default function FeatureImageGallery() {
     const Card = (props) => {
       return(
           <>
-            <Grid item xs={2.4}>
+            <Grid item xs={1.2}>
               <div className='grid' >
                 <div className='cards' style={{ backgroundColor: props.color }}>
                   <img className="imgcard" src={props.image} alt="" />
